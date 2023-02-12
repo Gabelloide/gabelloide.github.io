@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+        <!-- Bibliothèque d'icônes -->
+        <link href="css/icons/css/fontawesome.css" rel="stylesheet">
+        <link href="css/icons/css/brands.css" rel="stylesheet">
+        <link href="css/icons/css/solid.css" rel="stylesheet">
+        <!-- On doit ajouter 3 fichiers css qui prennent en charge les icônes. Elles sont liées à un fichier de polices présent également dans le dossier css. -->
+        <!-- Écrire en UTF-8 -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <!-- Pour les pages sur mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Feuille CSS-->
+        <link href="css/style.css" rel="stylesheet" media="all" type="text/css">
+        <!-- Icone sur l'onglet -->
+        <link rel="icon" type="image/png" sizes="128x128"
+            href="images/logo_petit.png">
+        <title>SmartSneak | Contact</title>
+    </head>
+    <body>
+        <!-- Mode Sombre -->
+        <button onclick="myFunction()" id="ModeSombre"><img
+                src="images/darkmode.png" alt="icône mode sombre"></button>
+        <script>
+        function myFunction() {
+            var body = document.body;
+            var form = document.querySelector('form')
+            var informations = document.querySelector('#informations_contact')
+            var para = document.querySelector('p')
+            var mode_sombre = document.querySelector('#ModeSombre')
+            body.classList.toggle("dark-mode");
+            form.classList.toggle("dark-mode");
+            informations.classList.toggle("dark-mode");
+            para.classList.toggle("dark-mode");
+            mode_sombre.classList.toggle("dark-mode");
+        } 
+        </script>
+        <header>
+            <a href="index.html"><img src='images/logo_grand.png' alt="Logo de
+                    la marque"></a>
+            <h1>SmartSneak</h1>
+            <h2> - Vous allez adorer marcher - </h2>
+
+        </header>
+
+        <!-- Barre de navigation -->
+        <nav id='menu'>
+            <ul>
+                <li><a href='index.html'>Accueil </a></li>
+                <li><a href='produits.html'>Produits</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1 id="titre_contact"> Nous contacter : </h1>
+
+        <div id="conteneur_contact_carte">
+
+            <div id="informations_contact">
+                <h2> <i class="fa-regular fa-envelope"></i> Adresse Email :</h2>
+                <p> j.doryan@smart-sneak.com <br> g.olivier@smart-sneak.com </p>
+                <h2> <i class="fa-solid fa-building-shield"></i> Notre siège
+                    social : </h2>
+                <p> 13 Avenue des Sciences | 91190 Gif-Sur-Yvette </p>
+                <h2> <i class="fa-solid fa-phone"></i> Numéro de téléphone :</h2>
+                <p> 01 82 58 68 17 </p>
+            </div>
+
+            <div id="conteneur_carte">
+                <iframe id="carte"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10531.25027023256!2d2.1692416!3d48.70906335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67f538f1df01d%3A0xe5d2ea29a4e0ceb!2sUniversit%C3%A9%20Paris-Saclay%20-%20IUT%20d&#39;Orsay!5e0!3m2!1sfr!2sfr!4v1665150746965!5m2!1sfr!2sfr"
+                    style="border:0;"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+        <form method=POST action="contact.html">
+            <h2> Écrivez-nous un message :</h2>
+            <p> Si vous avez des questions concernant certaines offres ou que
+                vous avez un problème avec votre produit,
+                vous pouvez nous envoyer un message à l'aide du formulaire
+                ci-dessous. </p>
+            <label for="nom_prenom"> Entrez votre nom et prénom : <input
+                    id="nom_prenom" type="text" name="Nom" class="nom_email"
+                    required placeholder="Nom et Prénom...">
+            </label> <br> <br>
+            <label for="adresse_mail"> Entrez votre adresse e-mail : <input
+                    id="adresse_mail" type="email" name="Email"
+                    class="nom_email" required
+                    placeholder="exemple.test@adresse.fr">
+            </label> <br> <br>
+            Choisissez le PDG que vous voulez contacter : <br> <label
+                for="contact_doryan"> <input id="contact_doryan" type="radio"
+                    name="radio">M. Doryan </label> <label
+                for="contact_olivier"> <input id="contact_olivier" type="radio"
+                    name="radio">M. Olivier </label>
+            <h3><label for="message"> Écrivez votre message : </label> </h3><textarea
+                id="message" placeholder="Votre message ici..."></textarea>
+            <label for="envoyer"><input id="envoyer" type="submit"
+                    value="Envoyer"></label>
+        </form>
+
+        <footer>
+            <img src="images/logo_petit.png" alt="Logo réduit de la marque">
+            <address>Adresse : contact@smart-sneak.com <br> Tél: 01 82 58 68 17<br>Doryan
+                Jovanovic | Olivier Gabelle <br>
+                Informations concernant le projet : <a
+                    href="assets/rapport.docx">DocX</a> / <a
+                    href="assets/rapport.pdf">PDF</a></address>
+            <img src="images/logo_petit.png" alt="Logo réduit de la marque">
+        </footer>
+
+    </body>

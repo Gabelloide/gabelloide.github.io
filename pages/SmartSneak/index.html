@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+        <!-- Écrire en UTF-8 -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <!-- Pour les pages sur mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Feuille CSS-->
+        <link href="css/style.css" rel="stylesheet" media="all" type="text/css">
+        <!-- Icone sur l'onglet -->
+        <link rel="icon" type="image/png" sizes="512x512"
+            href="images/logo_petit.png">
+        <title>SmartSneak | Page d'accueil</title>
+    </head>
+    <body>
+        <!-- Mode Sombre -->
+        <button onclick="darkMode()" id="ModeSombre"><img
+                src="images/darkmode.png" alt="icône mode sombre"></button>
+        <script>
+            function darkMode() {
+                var body = document.body;
+                var conteneur1 = document.querySelector('#conteneur_1_notre_histoire')
+                var conteneur2 = document.querySelector('#conteneur_2_nos_recherches')
+                var conteneur3 = document.querySelector('#conteneur_3_nos_objectifs')
+                var para_index = document.querySelector('.para_index')
+                var mode_sombre = document.querySelector('#ModeSombre')
+                body.classList.toggle("dark-mode");
+                conteneur1.classList.toggle("dark-mode");
+                conteneur2.classList.toggle("dark-mode");
+                conteneur3.classList.toggle("dark-mode");
+                para_index.classList.toggle("dark-mode");
+                mode_sombre.classList.toggle("dark-mode");
+        }
+        </script>
+        <header>
+            <a href="index.html"><img src='images/logo_grand.png' alt="Logo de
+                    la marque"></a>
+            <h1>SmartSneak</h1>
+            <h2> - Vous allez adorer marcher - </h2>
+        </header>
+
+        <!-- Barre de navigation -->
+        <nav id='menu'>
+            <ul>
+                <li><a href='index.html'>Accueil</a></li>
+                <li><a href='produits.html'>Produits</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+            </ul>
+        </nav>
+        <div id="premier_paragraphe_accueil">
+            <img id="image_accueil_1" src='images/image_accueil_1.jpg'
+                alt="Modèle de chaussure
+                1">
+            <p class="para_index"> Au 21<sup>ème</sup> siècle, nous sommes dans
+                une ère de numérique en constante expansion. De plus
+                d'informations sont traquées et récupérées par différents
+                capteurs,
+                situés dans notre téléphone ou dans les montres connectées. Mais
+                n'avez-vous pas envie de rendre ce tracking plus efficace et
+                plus localisé ?
+                Ne voulez-vous pas être certain de son efficacité ?
+                Avec SmartSneak, vous pouvez équiper votre paire de chaussures
+                avec tous les équipements électroniques que vous voulez !
+                Température corporelle, podomètre, différents mode de sport ou
+                de marche ou même des lacets adaptifs et bien plus, le tout sur
+                une batterie qui se recharge
+                lorsque vous marchez !
+                Vous pouvez consulter les différentes options sur notre page <a
+                    href="produits.html">Produits.</a>
+            </p>
+            <img id="image_accueil_2" src='images/image_accueil_2.jpg'
+                alt="Modèle de chaussure
+                2">
+        </div>
+
+        <div id="conteneur_0_accueil">
+            <div id="conteneur_1_notre_histoire">
+                <h1>Notre Histoire :</h1>
+                <p class="para_index">
+                    Les deux PDG de SmartSneak,
+                    Doryan et Olivier ont développé
+                    ce concept après un match de basket intense, où ils se
+                    heurtèrent
+                    à des problèmes du quotidien tels que les courbatures, un
+                    rythme cardiaque élevé ou transpiration...
+                    Animés d'une volonté de prendre connaissance et de traquer
+                    leurs informations corporelles mais gênés par leurs montres
+                    connectées et leurs téléphones
+                    portables, ils ne pouvaient pas contrôler ces informations
+                    efficacement.
+                    Nos deux PDG ont alors directement pensé à intégrer tous les
+                    capteurs nécessaires dans leurs chaussures, afin de garder
+                    un oeil sur leurs informations
+                    tout en pouvant disputer un match sans être encombrés.
+                </p>
+            </div>
+            <div id="conteneur_2_nos_recherches">
+                <h1>Nos recherches :</h1>
+                <p class="para_index">
+                    Pour commencer, nous avons répertorié tous les capteurs
+                    utiles pour nos clients afin de dresser la liste idéale pour
+                    vous.
+                    Par la suite, nous nous sommes penché sur l'application
+                    permettant de traduire les signaux analogiques récupérés par
+                    nos appareils.
+                    Via cette application, différents modes de sport sont
+                    disponibles mais une question se pose encore : lorsque vous
+                    n'avez pas la possibilité
+                    d'y accéder, il faut qu'il soit possible de changer de mode
+                    directement via une interface discrète présente sur la
+                    chaussure.
+                    Un mode polyvalent est donc disponible 24h/24 lorsque vous
+                    ne pouvez pas customiser précisément via l'application
+                    mobile.
+                    Après plusieurs tests de miniaturisation des capteurs pour
+                    les intégrer dans la chaussure, nous sommes enfin prêts à
+                    rentrer dans
+                    la phase de commercialisation !
+                </p>
+            </div>
+            <div id="conteneur_3_nos_objectifs">
+                <h1>Nos objectifs :</h1>
+                <p class="para_index">
+                    Révolutionner votre quotidien avec une toute nouvelle
+                    technologie qui pourra faciliter votre vie et vous
+                    accompagner pendant vos efforts.
+                    Vous proposer une technologie durable en partageant des
+                    mises à jour régulières.
+                </p>
+            </div>
+        </div>
+
+        <div class="video-responsive"> <iframe
+                src="https://www.youtube.com/embed/Cy1adxM-CjM"
+                allowfullscreen></iframe>
+        </div>
+
+        <footer>
+            <img src="images/logo_petit.png" alt="Logo réduit de la marque">
+            <address>Adresse : contact@smart-sneak.com <br> Tél: 01 82 58 68 17<br>Doryan
+                Jovanovic | Olivier Gabelle <br>
+                Informations concernant le projet : <a
+                    href="assets/rapport.docx">DocX</a> / <a
+                    href="assets/rapport.pdf">PDF</a></address>
+            <img src="images/logo_petit.png" alt="Logo réduit de la marque">
+        </footer>
+    </body>
+</html>

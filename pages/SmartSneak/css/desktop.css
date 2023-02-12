@@ -1,0 +1,299 @@
+header img {
+	display: block;
+	width: 18vh;
+	height: auto;
+	position: absolute;
+}
+
+/* Haut de la page (Header) */
+header h1 {
+	font-size: 56px;
+}
+
+header h2 {
+	font-size: 48px;
+}
+
+/* Paragraphes */
+p {
+	text-align: justify;
+	font-size: 24px;
+}
+
+.para_index::first-letter {
+	font-size: 36px;
+}
+
+/* PARAGRAPHE DE L'ACCUEIL "au 21e siècle" */
+#premier_paragraphe_accueil {
+	margin: 1%;
+	display: inline-block;
+}
+
+#premier_paragraphe_accueil p {
+	margin: 0;
+	margin-left: 1%;
+	margin-right: 1%;
+	float: left;
+	width: 29%;
+}
+
+#premier_paragraphe_accueil img {
+	border-radius: 4%;
+	border: solid rebeccapurple 5px;
+}
+
+/* Deux images chaussures */
+#image_accueil_1,
+#image_accueil_2 {
+	margin:  0% 0% 0% 0%;
+	float: left;
+	width: 25vw;
+	transition: all .2s ease-in-out;
+}
+
+#image_accueil_1 {
+	margin:  0% 0% 0% 6%;
+}
+
+#image_accueil_1:hover,
+#image_accueil_2:hover {
+	transition: all .2s ease-in-out;
+	transform: scale(1.05);
+	border-radius: 0;
+}
+
+/* 3 CASES DE DESCRIPTION DE L'ACCUEIL */
+#conteneur_0_accueil {
+	padding: 1%;
+	display: inline-block;
+}
+
+#conteneur_0_accueil h1 {
+	text-decoration: underline 5px rebeccapurple;
+}
+
+#conteneur_0_accueil div {
+	border: solid 5px rebeccapurple;
+	margin: 0.5%;
+	padding: 1%;
+	height: 100%;
+}
+
+#conteneur_1_notre_histoire,
+#conteneur_2_nos_recherches,
+#conteneur_3_nos_objectifs {
+	float: left;
+	width: 29%;
+	transition: all .2s ease-in-out;
+}
+
+#conteneur_1_notre_histoire:hover,
+#conteneur_2_nos_recherches:hover,
+#conteneur_3_nos_objectifs:hover {
+	transform: scale(1.05);
+}
+
+/* PIED DE PAGE (FOOTER) */
+footer {
+	display: flex;
+	align-items: center;
+	background-color: rebeccapurple;
+	font-family: 'Reem Kufi Fun';
+	font-size: 24px;
+	color: #FFF;
+	height: 4%;
+	position: relative;
+	text-align: center;
+	padding: 1% 5% 1% 1%;
+	margin: 5% 0 0 0;
+}
+
+footer img {
+	display: block;
+	margin: 0 auto;
+	width: 5vw;
+}
+
+
+/* FORMULAIRE */
+form {
+	padding: 1%;
+	font-size: 18px;
+}
+
+form h2 {
+	text-decoration: underline 5px rebeccapurple;
+}
+
+form h3 {
+	text-decoration: underline 3px rebeccapurple;
+}
+
+input,
+textarea {
+	font-family: "Playfair";
+	padding: 0.5%;
+	margin: 0.3%;
+	font-size: 18px;
+}
+
+
+.nom_email {
+	background-color: #f8f8f8;
+	border: 2px solid rebeccapurple;
+	border-radius: 5px;
+	width: 20%;
+}
+
+#message {
+	width: 100%;
+	height: 150px;
+	box-sizing: border-box;
+	border: 2px solid rebeccapurple;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	resize: none;
+	text-align: justify;
+}
+
+#envoyer {
+	font-family: "Reem Kufi Fun";
+	background-color: rebeccapurple;
+	padding: 0.5% 1% 0.5% 1%;
+	border-radius: 5px;
+	border: 1px solid white;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+}
+
+#envoyer:hover {
+	border: 1px solid black;
+	background-color: white;
+	color: black;
+	transition: all 0.3s ease-out;
+	cursor : not-allowed;
+}
+
+/* CONTACT ET CARTE */
+#titre_contact {
+	text-align: center;
+	text-decoration: underline 5px rebeccapurple;
+}
+
+#conteneur_contact_carte {
+	display: flex;
+	padding-left: 15%;
+	filter: drop-shadow(0 0 1em rebeccapurple);
+	/* Ajout d'une ombre à l'arrière des conteneurs */
+}
+
+#informations_contact {
+	border: solid 5px rebeccapurple;
+	border-right: none;
+	float: left;
+	width: 40%;
+	padding: 1%;
+}
+
+#informations_contact h2 {
+	text-decoration: underline 5px rebeccapurple;
+}
+
+/*On indente légèrement les icônes*/
+[class="fa-regular fa-envelope"],
+[class="fa-solid fa-building-shield"],
+[class="fa-solid fa-phone"] {
+	margin-right: 2%;
+}
+
+/* GOOGLE MAPS */
+#conteneur_carte {
+	border: solid 5px rebeccapurple;
+	border-left: none;
+	float: left;
+	width: 40%;
+}
+
+#carte {
+	display: block;
+	width: 100%;
+	height: 100%
+}
+
+/* PRODUITS */
+
+#conteneur_produits {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	filter: drop-shadow(0 0 1em rebeccapurple);
+	/* Ajout d'une ombre à l'arrière des conteneurs */
+}
+
+#conteneur_produits ul {
+	list-style-type: none;
+	font-size: 24px;
+	padding-left: 0;
+}
+
+#conteneur_produits ul li i {
+	padding-right: 5%;
+}
+
+#conteneur_produits div {
+	border: solid 5px rebeccapurple;
+	margin-top: 1%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1%;
+}
+
+#conteneur_produits h2 {
+	text-align: center;
+	text-decoration: underline 5px rebeccapurple;
+}
+
+#produit1,
+#produit2,
+#produit3 {
+	transition: all .2s ease-in-out;
+}
+
+#produit1:hover,
+#produit2:hover,
+#produit3:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#produit1 img,
+#produit2 img,
+#produit3 img {
+	width: 20vw;
+}
+
+#produit1 div,
+#produit2 div,
+#produit3 div {
+	width: 20%;
+	float: left;
+}
+
+#produit1 h3,
+#produit2 h3,
+#produit3 h3 {
+	text-align: center;
+	font-size: 30px;
+}
+
+#produit1 h3:hover,
+#produit2 h3:hover,
+#produit3 h3:hover {
+	color: rebeccapurple;
+}

@@ -1,0 +1,208 @@
+@import "desktop.css"(min-width: 901px);
+@import "mobile.css"(min-width: 0px) and (max-width: 900px);
+
+/* IMPORTATION POLICE */
+@font-face {
+    font-family: 'Reem Kufi Fun';
+    font-weight: 700;
+    src: url("../fonts/ReemKufiFun-Bold.ttf") format("truetype");
+}
+
+/*2E POLICE */
+@font-face {
+    font-family: 'Playfair';
+    font-weight: 400;
+    src: url("../fonts/Playfair.ttf") format("truetype");
+}
+
+/*3E POLICE */
+@font-face {
+    font-family: 'Modesto';
+    font-weight: 400;
+    src: url("../fonts/modesto-bold.ttf") format("truetype");
+}
+
+/* ELEMENTS DE LA PAGE */
+body {
+    margin: 0;
+    transition: all 0.5s ease-out;
+    background-image: url(../images/background_clair.png);
+}
+
+body.dark-mode {
+    background-image: url(../images/background_sombre.png);
+}
+
+.dark-mode {
+    background-color: #181A1B;
+    color: white;
+    transition: all 0.5s ease-out;
+}
+
+
+html {
+    background: white;
+    color: black;
+    font-family: "Reem Kufi Fun", sans-serif;
+}
+
+/* On évite un overlap du fond avec un fond blanc sur certains éléments pour le mode Clair */
+#conteneur_1_notre_histoire,
+#conteneur_2_nos_recherches,
+#conteneur_3_nos_objectifs,
+#produit1,
+#produit2,
+#produit3,
+#informations_contact,
+form,
+p {
+    background-color: white;
+}
+
+#premier_paragraphe_accueil p {
+    padding: 30px;
+}
+
+/* On évite un overlap du fond avec un fond noir sur certains éléments pour le mode Sombre */
+#produit1.dark-mode,
+#produit2.dark-mode,
+#produit3.dark-mode {
+    background-color: #181A1B;
+}
+
+#conteneur_1_notre_histoire.dark-mode,
+#conteneur_2_nos_recherches.dark-mode,
+#conteneur_3_nos_objectifs.dark-mode,
+p.dark-mode,
+#conteneur_1_notre_histoire.dark-mode p,
+#conteneur_2_nos_recherches.dark-mode p,
+#conteneur_3_nos_objectifs.dark-mode p,
+#premier_paragraphe_accueil.dark-mode,
+form.dark-mode,
+#informations_contact.dark-mode,
+#informations_contact.dark-mode p,
+form.dark-mode p {
+    background-color: #181A1B;
+}
+
+form.dark-mode input,form.dark-mode label,
+form.dark-mode #message {
+    color: white;
+    background-color: #181A1B;
+}
+
+/* Haut de la page (Header) */
+header h1 {
+    text-align: center;
+    color: white;
+    font-family: "Modesto", sans-serif;
+    margin-bottom: 0;
+}
+
+header h2 {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    font-family: "Modesto", sans-serif;
+}
+
+header {
+    background-color: rebeccapurple;
+    padding-top: 1%;
+    padding-bottom: 0.1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+
+/* VIDEO YOUTUBE */
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* LA BARRE DE NAVIGATION */
+#menu {
+    font-family: 'Reem Kufi Fun', sans-serif;
+    background: rebeccapurple;
+    color: #FFF;
+    height: 40px;
+    position: relative;
+}
+
+#menu ul,
+#menu li {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+#menu ul {
+    width: 100%;
+}
+
+#menu li {
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+#menu a {
+    display: block;
+    line-height: 40px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/* Effets de transition lors de survol + changement de couleur */
+#menu li a:hover {
+    color: rebeccapurple;
+    background: #F2F2F2;
+    transition: all 0.5s ease-out;
+}
+
+#menu li a {
+    transition: all 0.5s ease-out;
+}
+
+/* BOUTON MODE SOMBRE */
+#ModeSombre {
+    z-index: 100;
+    /* Le bouton est haut dessus de tous les éléments de la page, il est placé en haut à droite de l'écran et suit l'utilisateur durant sa navigation. */
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    right: 0;
+    top: 1%;
+}
+
+/* En mode clair, on rend l'image noire pour qu'elle soit visible. */
+#ModeSombre img {
+    width: 25%;
+    filter: brightness(0%)
+}
+
+#ModeSombre.dark-mode img {
+    filter: brightness(100%)
+}
+
+address {
+    font-style: normal;
+    font-family: 'Reem Kufi Fun';
+}
+
+address a {
+    color: grey;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+        <!-- Bibliothèque d'icônes -->
+        <link href="css/icons/css/fontawesome.css" rel="stylesheet">
+        <link href="css/icons/css/brands.css" rel="stylesheet">
+        <link href="css/icons/css/solid.css" rel="stylesheet">
+        <!-- On doit ajouter 3 fichiers css qui prennent en charge les icônes. Elles sont liées à un fichier de polices présent également dans le dossier css. -->
+        <!-- Écrire en UTF-8 -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <!-- Pour les pages sur mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Feuille CSS-->
+        <link href="css/style.css" rel="stylesheet" media="all" type="text/css">
+        <!-- Icone sur l'onglet -->
+        <link rel="icon" type="image/png" sizes="128x128"
+            href="images/logo_petit.png">
+        <title>SmartSneak | Produits</title>
+    </head>
+    <body>
+        <!-- Mode Sombre -->
+        <button onclick="myFunction()" id="ModeSombre"><img
+                src="images/darkmode.png" alt="icône mode sombre"></button>
+        <script>
+        function myFunction() {
+            var body = document.body;
+            var produit1 = document.querySelector('#produit1')
+            var produit2 = document.querySelector('#produit2')
+            var produit3 = document.querySelector('#produit3')
+            var mode_sombre = document.querySelector('#ModeSombre')
+            body.classList.toggle("dark-mode");
+            produit1.classList.toggle("dark-mode");
+            produit2.classList.toggle("dark-mode");
+            produit3.classList.toggle("dark-mode");
+            mode_sombre.classList.toggle("dark-mode");
+        } 
+        </script>
+        <header>
+            <a href="index.html"><img src='images/logo_grand.png' alt="Logo de
+                    la marque"></a>
+            <h1>SmartSneak</h1>
+            <h2> - Vous allez adorer marcher - </h2>
+        </header>
+
+        <!-- Barre de navigation -->
+        <nav id='menu'>
+            <ul>
+                <li><a href='index.html'>Accueil </a></li>
+                <li><a href='produits.html'>Produits</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1 id="titre_contact"> Nos Produits : </h1>
+
+        <div id="conteneur_produits">
+            <div id="produit1">
+                <img src="images/produit1.png" alt="Offre Classique">
+                <h2>Offre Classique</h2>
+                <ul>
+                    <li><i class="fa-solid fa-shoe-prints"></i>Podomètre</li>
+                    <li><i class="fa-solid fa-person-walking"></i>Mode Marche
+                    </li>
+                    <li><i class="fa-solid fa-cookie-bite"></i>Compteur de
+                        Calories</li>
+                    <li><i class="fa-solid fa-plug-circle-bolt"></i>Recharge
+                        Filaire</li>
+                    <li><i class="fa-solid fa-battery-three-quarters"></i>Batterie
+                        Li-ion 34,000 mWh </li>
+                    <li><i class="fa-solid fa-microchip"></i>Puce Intel® de 10<sup>e</sup>
+                        Génération</li>
+                </ul>
+                <h3>299,99€</h3>
+            </div>
+            <div id="produit2">
+                <img src="images/produit2.png" alt="Offre Gold">
+                <h2>Offre Gold</h2>
+                <ul>
+                    <li><i class="fa-solid fa-certificate"></i>Toutes les
+                        options <u>Classiques</u> </li>
+                    <li><i class="fa-solid fa-basketball"></i>Mode Sport </li>
+                    <li><i class="fa-solid fa-atom"></i>Recharge Dynamique</li>
+                    <li><i class="fa-solid fa-battery-three-quarters"></i>Batterie
+                        Li-ion de 50,000 mWh</li>
+                    <li><i class="fa-solid fa-microchip"></i>Puce AMD® de 6<sup>e</sup>
+                        Génération</li>
+                </ul>
+                <h3>449,99€</h3>
+            </div>
+            <div id="produit3">
+                <img src="images/produit3.png" alt="Offre Platinum">
+                <h2>Offre Platinum</h2>
+                <ul>
+                    <li><i class="fa-solid fa-certificate"></i>Toutes les
+                        options <u>Gold</u> </li>
+                    <li><i class="fa-solid fa-wifi"></i>Recharge Sans-Fil</li>
+                    <li><i class="fa-solid fa-battery-three-quarters"></i>Batterie
+                        Li-ion de 99,999 mWh</li>
+                    <li><i class="fa-solid fa-link"></i>Lacets Adaptatifs</li>
+                    <li><i class="fa-solid fa-microchip"></i>Puce Intel® de 13<sup>e</sup>
+                        Génération</li>
+                </ul>
+                <h3>599,99€</h3>
+            </div>
+        </div>
+
+        <footer>
+            <img src="images/logo_petit.png" alt="Logo réduit de la marque">
+            <address>Adresse : contact@smart-sneak.com <br> Tél: 01 82 58 68 17<br>Doryan
+                Jovanovic | Olivier Gabelle <br>
+                Informations concernant le projet : <a
+                    href="assets/rapport.docx">DocX</a> / <a
+                    href="assets/rapport.pdf">PDF</a></address>
+            <img src="images/logo_petit.png" alt="Logo réduit de la marque">
+        </footer>
+
+    </body>

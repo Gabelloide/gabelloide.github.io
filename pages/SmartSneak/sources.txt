@@ -1,0 +1,17 @@
+Bien adapter la vidéo youtube à la page: https://alphadesign.fr/blog/comment-ajouter-des-videos-youtube-vimeo-responsives-a-n-importe-quel-site.html
+
+Logo : Police utilisée -> Modesto | Ressources : Logo Nike (https://upload.wikimedia.org/wikipedia/fr/thumb/8/8e/Swoosh.svg/1200px-Swoosh.svg.png) | Créé sur Photoshop
+
+Aide au css formulaire : https://www.w3schools.com/css/css_form.asp
+
+Aide design bouton : https://www.bestcssbuttongenerator.com/
+
+Aide mode Sombre pour le site : https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+
+Icone Mode Sombre : https://icons8.com/icons/set/bulb
+
+Bibliothèque d'icônes : https://fontawesome.com/
+Pour avoir les icônes en hors ligne, on ajoute des fichiers de polices et de css -> tutoriel de fontawesome : https://fontawesome.com/docs/web/setup/host-yourself/webfonts
+
+Motif du fond du site (libre de droits)
+https://media.istockphoto.com/vectors/cord-lace-icon-vector-sign-and-symbol-isolated-on-white-background-vector-id1023572246?k=20&m=1023572246&s=612x612&w=0&h=sCndPWDiU-ZtFs5cozAxZr7bDUAK_TQuDyqRXigRmp4=
