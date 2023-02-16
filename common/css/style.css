@@ -1,81 +1,20 @@
+@import "desktop.css"(min-width: 901px);
+@import "mobile.css"(min-width: 0px) and (max-width: 900px);
+
 @font-face {
   font-family: 'Cascadia';
   font-weight: 500;
   src: url("../fonts/Cascadia.ttf") format("truetype");
 }
-/* SCROLLBAR */
-::-webkit-scrollbar {
-  background-color: #121820;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #43c19a;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #bd6bc0;
-}
-
 
 html {
   background-color: #1f2937;
   color: white;
-  font-size: 20px;
   font-family: Cascadia;
   scroll-behavior: smooth;
 }
 
-section {
-  margin: 5% 0 5% 0;
-  text-align: justify;
-}
 
-#main_image {
-  width: 100%;
-  margin: 0 0 0 0;
-}
-
-#scroll_down {
-  text-decoration: none;
-}
-
-#para_scroll {
-  text-align: center;
-}
-
-#scroll_up_button {
-  position: fixed;
-  right:    0;
-  bottom:   0;
-  font-size: 2em;
-  margin: 0 0.5% 0.5% 0
-}
-
-.fa-circle-arrow-down {
-  transition: all 0.9s ease-out;
-  font-size: 100px;
-}
-
-.fa-circle-arrow-down:hover {
-  transition: all 0.3s ease-out;
-  transform: rotate(1turn);
-}
-
-img {
-  width: 60%;
-  display: block;
-  margin: 0 auto;
-}
-
-h1 {
-  font-size: 48px;
-  text-align: center;
-  color: #bd6bc0;
-}
-
-p {
-  margin: 2% 2% 2% 2%;
-}
 
 span {
   color: #43c19a;
@@ -86,29 +25,6 @@ a {
   transition: all 0.5s ease-out;
 }
 
-a:hover {
-  color: #bd6bc0;
-  transition: all 0.5s ease-out;
-}
-
-ul {
-  margin: 0 2% 0 2%;
-  list-style-type: none;
-}
-
-ul li {
-  padding: 1%;
-}
-
-ul li a {
-  text-decoration: none;
-}
-
-details summary {
-  font-size: 48px;
-  list-style-type: none;
-  cursor: pointer;
-}
 details > summary {
   list-style: none;
 }
@@ -123,95 +39,43 @@ details {
   transition: all 0.5s ease-out;
 }
 
-/*details:not([open]) >summary>h1::before {
-  content : "\279C  "
+details:not([open]) >summary>h1::before {
+  content : "○ " 
 }
 details[open] >summary>h1::before {
-  content : "\25BC  "
-}*/
-
+  content : "● "
+}
 
 details:hover {
   background: #121820;
   transition: all 0.5s ease-out;
 }
 
-
-/* NAVBAR */
-#menu {
-  font-family: 'Cascadia';
-  background: #1f2937;
-  color: #FFF;
-  height: 40px;
-  position: relative;
-}
-
-#menu ul,
-#menu li {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
-
-#menu ul {
-  width: 100%;
-}
-
-#menu li {
-  float: left;
-  display: inline;
-  position: relative;
-}
-
-#menu a {
-  display: block;
-  line-height: 40px;
-  padding: 0 25px;
-  text-decoration: none;
-  color: #FFFFFF;
-  font-size: 20px;
-}
-
-#menu li a:hover {
-  border-radius: 10px;
-  color: #bd6bc0;
-  background: #121820;
-  transition: all 0.5s ease-out;
-}
-
-#menu li a {
-  transition: all 0.5s ease-out;
-}
-
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  grid-auto-rows: minmax(100px, auto);
-  padding: 1%;
-  color: #43c19a;
-}
-
-.grid div {
+/* SCROLLBAR */
+::-webkit-scrollbar {
   background-color: #121820;
-  text-align: center;
-  border-radius: 20px;
-  transition: all 0.5s ease-out;
-  padding: 5%;
-  font-size: 36px;
 }
 
-.grid div:hover {
-  background-color: #1f2937;
-  transition: all 0.3s ease-out;
-  color:#bd6bc0 ;
+::-webkit-scrollbar-thumb {
+  background-color: #43c19a;
 }
 
-.grid a {
+::-webkit-scrollbar-thumb:hover {
+  background-color: #bd6bc0;
+}
+
+#scroll_down { /* The arrow is a link by itself, we are removing any decoration */
   text-decoration: none;
 }
 
-.para_btc_screens {
+#para_scroll { /* The paragraph that contains the arrow to scroll down, needed to be centered */
   text-align: center;
 }
+
+
+.fa-circle-arrow-down:hover { /* Arrow to scroll down, general properties */
+  transition: all 0.3s ease-out;
+  transform: rotate(1turn);
+}
+
+
