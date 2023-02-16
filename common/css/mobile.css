@@ -47,12 +47,12 @@ p {
   margin: 2% 2% 2% 2%;
 }
 
-
+/* MENUS OUVRABLES DE L'INDEX*/
+details section {
+  padding: 30px;
+}
 
 /* BARRE DE NAVIGATION */
-
-
-/* NAVBAR */
 #menu {
   font-family: 'Cascadia';
   background: #1f2937;
