@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 85</title>
+    <link rel="stylesheet" href="../css/chapitre85.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li></ul>
+        <li><a href='copyright.html'>Copyright</a></li>
+</ul>
+</nav>
+<h3><b>85</b></h3>
+    <p>
+      En pivotant, la petite figure de bois découvre un bouton. Alors que vous
+      vous demandez si vous allez presser ce bouton, vous ne remarquez pas ce
+      qui se produit dans la cheminée. Dans le foyer, le feu reprend vie : de
+      longues flammes s'élèvent et la chaleur devient de plus en plus intense, à
+      tel point que vous faites quelques pas en arrière. Deux silhouettes
+      jaillissent alors du feu et vous font face.
+      <img id="image85" src="../img/images_paragraphes/85.png">
+      Ces ESPRITS DU FEU sont de petite taille et ne vous arrivent qu'aux
+      genoux, mais leur corps de flamme brûle avec la force du feu qui leur a
+      donné vie. Ils voltigent au-dessus du tapis ; et tout ce qu'ils touchent
+      s'enflamme instantanément. <a href="9.html">Vous pouvez les combattre.</a>
+      Sinon, <a href="145.html">rendez-vous à cet endroit.</a>
+    </p> <footer>
+      <a href='84.html'><—</a> Parcourir les pages <a
+        href='86.html'> —> </a>
+    </footer>
+  </body>
+  <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+  <audio id="feu" src="../sons/feu.ogg" preload="auto"></audio>
+  <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+  <script>
+                    var imageson = document.getElementById('image85'),
+                    feuilles = document.getElementById('feu'),
+                        audios = document.querySelectorAll('audio');
+                    console.log(audios);
+                    imageson.addEventListener('mouseover', function() {
+                      [].forEach.call(audios, function(audio) {
+                        // do whatever
+                        audio.play();
+                      });
+                      }, false);
+                  </script>
+</html>

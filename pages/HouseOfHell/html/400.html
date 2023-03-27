@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chapitre 400</title>
+        <link rel="stylesheet" href="../css/chapitre400.css">
+    </head>
+    <body>
+        <header>
+            <h1>Le Manoir de l'Enfer</h1>
+            <h2>Un livre dont vous êtes le Héros</h2>
+        </header>
+        <!-- Barre de navigation -->
+        <nav id='menu'>
+            <ul>
+                <li><a href='index.html'>Accueil</a></li>
+                <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+                <li><a href='indications_jeu.html'>Indications</a></li>
+                <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+                <li><a href='sommaire.html'>Sommaire</a></li>
+                <li><a href='copyright.html'>Copyright</a></li>
+            </ul>
+        </nav>
+        <h3><b>400</b></h3>
+        <p> Lorsque vous lui donnez le coup de grâce, la créature pousse un cri
+            effroyable en
+            s'abattant sur la table. Dans un dernier sursaut, ses bras
+            accrochent le candélabre dont les
+            bougies s'éparpillent sur le sol. Un hurlement s'élève alors
+            derrière vous, et en vous
+            retournant dans l'instant, vous voyez votre deuxième adversaire, que
+            vous aviez
+            totalement oublié, sauter par-dessus la table et serrer le monstre
+            contre sa poitrine en
+            sanglotant. Malgré la pitié qu'il vous inspire, vous savez qu'il
+            faut vous débarrasser du
+            Comte également. Mais vous n'avez pas le temps de vous apitoyer sur
+            son sort car
+            quelque chose de beaucoup plus grave attire votre attention : une
+            des bougies a roulé sur
+            le sol jusqu'aux lourdes tentures qui, maintenant, commencent à
+            prendre feu... vous devez
+            sortir de ce Manoir, et vite ! La fumée a totalement envahi la salle
+            à manger lorsque vous
+            atteignez la porte du Manoir, et les flammes semblent vous
+            poursuivre alors que vous
+            dévalez les marches menant au porche. Arrivé dans l'allée, vous vous
+            retournez : le feu,
+            maintenant dévore le Manoir, dont bientôt il ne restera plus que des
+            cendres.
+            <img id="image400" src="../img/images_paragraphes/400.png">
+            Une fin tout à fait digne de ce Manoir de l'Enfer, pensez-vous. Mais
+            où, diable, allez-vous
+            pouvoir trouver un garage ouvert à cette heure de la nuit ?...
+        </p>
+        <footer>
+            <a href='399.html'><—</a> Parcourir les pages
+        </footer>
+        <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+        <audio id="flamme" src="../sons/flamme.ogg" preload="auto"></audio>
+        <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+        <script>
+        var imageson = document.getElementById('image400'),
+            chien = document.getElementById('flamme'),
+            audios = document.querySelectorAll('audio');
+        console.log(audios);
+        imageson.addEventListener('mouseover', function() {
+          [].forEach.call(audios, function(audio) {
+            // do whatever
+            audio.play();
+          });
+          }, false);
+      </script>
+    </body>
+</html>

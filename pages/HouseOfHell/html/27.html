@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 27</title>
+    <link rel="stylesheet" href="../css/chapitre27.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>27</b></h3>
+    <p>
+      Vous écartez complètement les rideaux, et vous regardez au-dehors. Mais la
+      lumière de la pièce vous empêche de distinguer quoi que ce soit, et vous
+      tirez les rideaux derrière vous. Le nez collé à la vitre, vous écarquillez
+      les yeux. Un grondement de tonnerre se fait entendre, et la pluie redouble
+      de vigueur, formant comme un rideau devant vous. Un éclair illumine
+      soudain la nuit, et une vision d'horreur vous apparaît qui vous fait
+      pousser un hurlement. Là, dehors, à peu de distance de la fenêtre, un
+      visage livide dégoulinant d'eau, se balance dans le vent ! un visage
+      allongé, le cou serré par un nœud coulant, qui vous fixe de ses yeux
+      éteints.
+      <img id="image27" src="../img/images_paragraphes/27.png">
+      Vous bondissez en arrière en refermant les rideaux pour ne plus voir cette
+      vision d'enfer, dont le visage, pourtant, vous semble familier... Le vieil
+      homme du village ! Vous ajoutez 3 points à votre total de PEUR. Si vous
+      êtes toujours en vie, vous pouvez <a href="231.html">vous allonger sur le
+        lit pour y passer
+        la nuit</a>, ou <a href="121.html">vous précipiter hors de la pièce pour
+        regagner le balcon</a>.
+
+    </p> <footer>
+      <a href='26.html'><—</a> Parcourir les pages <a
+        href='28.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="feuilles" src="../sons/feuilles.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+            var imageson = document.getElementById('image27'),
+            feuilles = document.getElementById('feuilles'),
+                audios = document.querySelectorAll('audio');
+            console.log(audios);
+            imageson.addEventListener('mouseover', function() {
+              [].forEach.call(audios, function(audio) {
+                // do whatever
+                audio.play();
+              });
+              }, false);
+          </script>
+  </body>
+</html>

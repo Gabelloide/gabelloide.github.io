@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 181</title>
+    <link rel="stylesheet" href="../css/chapitre181.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>181</b></h3>
+    <p>
+      Le majordome braille lorsque vous lui assénez un premier coup. Cet homme
+      n'est apparemment pas habitué à la violence car son cri d'agonie est
+      disproportionné par rapport au modeste coup que vous lui avez porté. Son
+      hurlement se poursuit, et devient de plus en plus strident, à tel point
+      que vous reculez en vous bouchant les oreilles. Mais ce n'est pas la
+      douleur qui le fait hurler ainsi...
+
+      Des vapeurs commencent à s'élever du sol et à envelopper l'homme, et son
+      hurlement se transforme en rugissement tandis que ses yeux
+      s'agrandissent
+      démesurément. Il se métamorphose ! Devant vous, Franklin est en train de
+      se dissoudre pour donner naissance à une forme diabolique... Des fumées
+      jaillissent de sa gueule, et sa peau se recouvre d'écaillés noirâtres.
+      Ses
+      mains se sont transformées en deux pattes griffues qui déchirent l'air,
+      ses pieds sont maintenant des pattes de bouc.
+
+
+      <img src="../img/images_paragraphes/181.png" id="image181">
+
+
+      Vous ajoutez 3 points à votre total de PEUR pour être le témoin de la
+      naissance de ce démon surgi des profondeurs de l'enfer. Si vous êtes
+      toujours en vie, et si vous possédez le Kriss, rendez-vous <a
+        href="109.html">ici.</a> Si
+      vous ne possédez pas le Poignard Malais, rendez-vous <a href="52.html">à
+        cet endroit.</a>
+
+    </p> <footer>
+      <a href='180.html'><—</a> Parcourir les pages <a
+        href='182.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="monstre" src="../sons/monstre.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+                  var imageson = document.getElementById('image181'),
+                  monstre = document.getElementById('monstre'),
+                      audios = document.querySelectorAll('audio');
+                  console.log(audios);
+                  imageson.addEventListener('mouseover', function() {
+                    [].forEach.call(audios, function(audio) {
+                      // do whatever
+                      audio.play();
+                    });
+                    }, false);
+                </script>
+  </body>
+</html>

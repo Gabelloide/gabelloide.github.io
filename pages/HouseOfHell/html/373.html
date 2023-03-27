@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 373</title>
+    <link rel="stylesheet" href="../css/chapitre373.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>373</b></h3>
+    <p>
+      La porte s'ouvre lentement, et un homme portant un verre pénètre dans la
+      pièce en traînant les pieds.
+
+      <img src="../img/images_paragraphes/373.png" id="image373">
+
+      Il semble plié en deux, et ses mouvements sont maladroits. Alors qu'il
+      s'approche du lit, vous réalisez qu'il va bientôt se rendre compte que
+      vous n'êtes pas là. Allez-vous vous glisser rapidement hors de la pièce,
+      et <a href="350.html">fermer la porte derrière vous</a>, ou
+      préférez-vous <a href="399.html">bondir sur l'homme pour l'attaquer</a>
+      ?
+    </p> <footer>
+      <a href='372.html'><—</a> Parcourir les pages <a
+        href='374.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="rire" src="../sons/rire.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+        imageson = document.getElementById('image373'),
+        rire = document.getElementById('rire'),
+        audios = document.querySelectorAll('audio');
+        console.log(audios);
+        imageson.addEventListener('mouseover', function() {
+        [].forEach.call(audios, function(audio) {
+        // do whatever
+        audio.play();
+        });
+        }, false);
+      </script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 277</title>
+    <link rel="stylesheet" href="../css/chapitre277.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>277</b></h3>
+    <p>
+      Vous entendez soudain un bruit de pas et l'homme vêtu de sombre
+      réapparaît
+      précédant un personnage de haute taille portant une veste d'intérieur
+      pourpre. « Permettez-moi de vous présenter Lord Kelnor, Comte de Brume
+      »,
+      dit-il. Le Comte vous tend la main. Son regard vous transperce et ses
+      lèvres esquissent un pâle sourire.
+
+      <img src="../img/images_paragraphes/277.png" id="image277">
+
+      A peine avez-vous commencé à lui raconter votre mésaventure qu'il vous
+      interrompt d'un signe de la main. « Je vous en prie, dit-il. Je vois que
+      vous avez été pris dans cette épouvantable tempête ; allons nous
+      installer
+      devant un bon feu, et voyons comment nous pouvons vous venir en aide. »
+      Puis, se tournant vers son majordome, il ajoute : « Franklin, dites au
+      cuisinier de préparer quelque chose de chaud pour notre visiteur. » Vous
+      protestez en lui disant que vous ne voulez le déranger en aucune façon,
+      mais, sans vous prêter la moindre attention, il vous conduit jusqu'à un
+      salon où brûle un feu de bois. Vous vous débarrassez de votre manteau,
+      et
+      vous vous installez confortablement dans un fauteuil. Bientôt la chaleur
+      du feu commence à chasser vos sombres pensées. D'autant plus que
+      Franklin
+      est vite de retour, portant un plateau sur lequel sont posés deux verres
+      de cognac. Allez-vous vous détendre en dégustant le cognac, puis
+      <a href="394.html">demander
+        à votre hôte
+        la permission d'utiliser le téléphone</a>, ou
+      <a href="111.html">préférez-vous attendre qu'il vous questionne</a> ?
+    </p> <footer>
+      <a href='276.html'><—</a> Parcourir les pages <a
+        href='278.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="grince" src="../sons/grince.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+                  var imageson = document.getElementById('image277'),
+                  grince = document.getElementById('grince'),
+                  audios = document.querySelectorAll('audio');
+                  console.log(audios);
+                  imageson.addEventListener('mouseover', function() {
+                  [].forEach.call(audios, function(audio) {
+                  // do whatever
+                  audio.play();
+                  });
+                  }, false);
+        </script>
+  </body>
+</html>

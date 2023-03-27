@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 291</title>
+    <link rel="stylesheet" href="../css/chapitre291.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>291</b></h3>
+    <p>
+      Vous vous tenez à quelques pas derrière un fauteuil qui fait face à la
+      cheminée. Un homme que le haut dossier du siège vous cachait se lève, et
+      se tourne vers vous. Il est grand, son visage est blême et ses cheveux
+      sont noirs comme du jais. Il porte une longue cape sombre fermée sous le
+      cou par une chaîne d'or.
+
+      <img src="../img/images_paragraphes/291.png" id="image291">
+
+      « Eh bien, dit-il, jusqu'à présent vous vous en êtes assez bien tiré
+      face
+      aux locataires de ce Manoir. Mais je pense que vous allez bientôt vous
+      rendre compte que votre chance touche à sa fin. Approchez-vous que je
+      puisse vous voir ! » Allez-vous vous <a href="326.html">avancer comme il
+        vous le demande</a>
+      , ou préférez-vous <a href="228.html">l'attaquer sans attendre</a>
+      ?
+
+    </p> <footer>
+      <a href='290.html'><—</a> Parcourir les pages <a
+        href='292.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="cheminee" src="../sons/cheminee.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+                      var imageson = document.getElementById('image291'),
+                      cheminee = document.getElementById('cheminee'),
+                      audios = document.querySelectorAll('audio');
+                      console.log(audios);
+                      imageson.addEventListener('mouseover', function() {
+                      [].forEach.call(audios, function(audio) {
+                      // do whatever
+                      audio.play();
+                      });
+                      }, false);
+            </script>
+  </body>
+</html>

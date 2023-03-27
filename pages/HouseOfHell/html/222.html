@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 222</title>
+    <link rel="stylesheet" href="../css/chapitre222.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>222</b></h3>
+    <p>
+      Vous saisissez la poignée que vous tournez lentement, et vous poussez la
+      porte. La tempête qui fait rage, dehors, produit un vacarme infernal, mais
+      vous franchissez cependant le pas de la porte... et vous vous arrêtez net,
+      le souffle coupé et les yeux grands ouverts, glacé d'effroi. Devant vous
+      se tient une silhouette encapuchonnée dont le visage n'a rien d'humain,
+      car sa tête est celle d'un bouc ! Sa gueule est rouge d'un sang qui
+      s'écoule goutte à goutte sur le sol, et ses yeux morts vous fixent de leur
+      regard vide.
+
+      <img src="../img/images_paragraphes/222.png" id="image222">
+
+      La vision est terrifiante, et vous ajoutez 3 points à votre total de PEUR.
+      Si vous êtes toujours en vie, vous claquez la porte, et vous faites
+      demi-tour en courant. Allez-vous <a href="285.html">vous précipiter vers
+        une porte qui se
+        trouve sur votre gauche</a>, <a href="353.html">vers une porte située à
+        votre droite</a>, ou <a href="108.html">revenir sur vos pas dans le
+        couloir ?
+
+      </p> <footer>
+        <a href='221.html'><—</a> Parcourir les pages <a
+          href='223.html'> —> </a>
+      </footer>
+      <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+      <audio id="goutte" src="../sons/goutte.ogg" preload="auto"></audio>
+      <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+      <script>
+                                var imageson = document.getElementById('image222'),
+                                goutte = document.getElementById('goutte'),
+                                    audios = document.querySelectorAll('audio');
+                                console.log(audios);
+                                imageson.addEventListener('mouseover', function() {
+                                  [].forEach.call(audios, function(audio) {
+                                    // do whatever
+                                    audio.play();
+                                  });
+                                  }, false);
+          </script>
+    </body>
+  </html>

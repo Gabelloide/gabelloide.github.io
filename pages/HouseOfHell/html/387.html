@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 387</title>
+    <link rel="stylesheet" href="../css/chapitre387.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>387</b></h3>
+    <p>
+      Le tunnel obscur dans lequel vous venez de vous glisser n'est pas très
+      long, et aboutit bientôt à une porte que vous poussez avec précaution.
+      Elle s'ouvre sur une pièce déserte qui doit être une sorte d'antichambre
+      ou de vestiaire, car vous y remarquez de nombreux vêtements, ou, plus
+      exactement, de nombreux habits de cérémonie. En effet, trente ou
+      quarante
+      toges blanches sont pendues à des patères et, posés sur des étagères,
+      vous
+      pouvez voir des masques. De macabres masques, qui sont en fait des têtes
+      de bouc ! Au fond de la pièce, à gauche, vous apercevez une porte.
+      Perplexe, vous vous demandez ce que vous allez faire. Un frisson vous
+      parcourt alors l'échiné, car le bruit que vous entendez ne vous laisse
+      aucun doute. Quelqu'un vient ! D'après les murmures de voix qui
+      s'amplifient peu à peu, c'est tout un groupe de personnes qui se dirige
+      vers la pièce où vous vous trouvez. Où vous cachez ? Vous jetez un coup
+      d'œil autour de vous, et vous décidez de prendre le risque de vous
+      mettre
+      contre le mur, près de l'autre porte, afin qu'elle vous cache lorsque
+      quelqu'un l'ouvrira. La porte ne tarde pas, en effet, à s'ouvrir sur une
+      quarantaine de personnes bavardant et gesticulant avec excitation. Vous
+      en
+      profitez pour vous mêler à elles, et passer ainsi inaperçu en imitant
+      leurs mimiques. En parlant fort, elles poussent du coude un homme
+      qu'elles
+      nomment Frère Meyna'ch et, d'après ce que vous pouvez comprendre, il
+      semble que cette nuit soit pour elles de la plus grande importance. Vous
+      continuez à les imiter, souriant, éclatant de rire même, et vous vous
+      retrouvez finalement revêtu d'une toge blanche, une tête de bouc
+      enfoncée
+      sur votre propre tête !
+
+
+      <img src="../img/images_paragraphes/387.png" id="image387">
+
+
+      Maintenant, au milieu de vos nouveaux « compagnons » vous pouvez <a
+        href="122.html">quitter
+        la pièce</a> en empruntant le chemin par où ils sont venus. Mais si
+      vous êtes trop terrorisé pour les suivre, vous pouvez essayer
+      de <a href="219.html">rester en arrière</a>, tandis qu'ils
+      disparaissent, priant le ciel pour
+      qu'ils ne vous remarquent pas.
+
+    </p> <footer>
+      <a href='386.html'><—</a> Parcourir les pages <a
+        href='388.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="grince" src="../sons/grince2.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+              imageson = document.getElementById('image387'),
+              grince = document.getElementById('grince'),
+              audios = document.querySelectorAll('audio');
+              console.log(audios);
+              imageson.addEventListener('mouseover', function() {
+              [].forEach.call(audios, function(audio) {
+              // do whatever
+              audio.play();
+              });
+              }, false);
+            </script>
+  </body>
+</html>

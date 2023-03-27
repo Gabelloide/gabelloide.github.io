@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html id="corps">
+  <head>
+    <meta charset="utf-8">
+    <title>Le Manoir de l'Enfer</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/crane.png">
+  </head>
+
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>🏠 Accueil</a></li>
+        <li><a href='comment_survivre.html'>❔ Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>📄 Indications</a></li>
+        <li><a href='debut_histoire.html'>🕷️ Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>🎃 Sommaire</a></li>
+        <li><a href='copyright.html'>✏️ Copyright</a></li>
+      </ul>
+    </nav>
+    <h1>Explications pour votre lecture</h1>
+    <div id="conteneur_0">
+      <p>Célèbre ouvrage dont vous êtes le héros, <u>Le Manoir de l'Enfer</u>,
+        écrit par Steve Jackson et
+        magnifiquement illustré par Tim Sell, vous propose de vivre une aventure
+        fantastique unique dans un manoir hanté
+        rempli de dangers ! Grâce à la traduction proposée par Michel Zenon et
+        l'édition Gallimard, vous pouvez désormais vivre pleinement cette
+        épopée.</p>
+      <img id="cover_livre" alt="couverture du livre" src="../img/cover.jpg">
+    </div>
+    <div id="conteneur_1">
+      <p id="feuille">Dans un premier temps, munissez-vous de cette Feuille
+        d'Aventure ! Elle est obligatoire pour vous aventurer dans le Manoir.</p>
+      <img src="../img/feuille.png">
+      <p id="table_matieres">Voici une Table des Matières pour accéder aux
+        différentes pages qui vous serviront au cours du jeu :</p>
+      <ul>
+        <li><a href="comment_survivre.html">Comment survivre dans le Manoir de
+            l'Enfer</a></li>
+        <li><a href="indications_jeu.html">Indications sur le Jeu </a></li>
+        <li><a href="debut_histoire.html">L'introduction de l'Histoire </a></li>
+        <li><a href="sommaire.html">Le Sommaire des Chapitres </a></li>
+      </ul>
+    </div>
+  </body>
+  <footer>
+    Parcourir les pages <a href="comment_survivre.html"> —> </a>
+  </footer>
+  <!-- Fichier son qui sera joué au passage de la souris sur la page-->
+  <audio id="ambiance" src="../sons/ambiance.ogg" preload="auto"></audio>
+  <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+  <script>
+    var imageson = document.getElementById('corps'),
+    ambiance = document.getElementById('ambiance'),
+    audios = document.querySelectorAll('audio');
+    console.log(audios);
+    imageson.addEventListener('mouseover', function() {
+    [].forEach.call(audios, function(audio) {
+    audio.play();
+    });
+    }, false);
+  </script>
+</html>

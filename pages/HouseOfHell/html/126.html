@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 126</title>
+    <link rel="stylesheet" href="../css/chapitre126.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>126</b></h3>
+    <p>
+      Vous saisissez la poignée de la porte que vous ouvrez en grand. Mais la
+      vision qui s'offre à vous vous fait reculer d'horreur. A l'intérieur du
+      placard, immobile, se tient une forme hideuse couverte de guenilles. Son
+      visage et ses mains sont à moitié pourris, et la pestilence qui en émane
+      vous fait chanceler.
+      <img src="../img/images_paragraphes/126.png" id="image126">
+
+      Ses yeux s'ouvrent et sa gorge émet un abominable gargouillement, tandis
+      que sa langue répugnante s'agite dans votre direction. La créature
+      s'avance alors vers vous. Vous ajoutez 2 points à votre total de PEUR, et
+      si vous êtes toujours en vie, vous allez devoir
+      combattre cette GOULE. Vous pouvez saisir un des couteaux accrochés au
+      mur, et l'utiliser comme une ARME. Dans ce cas, ajoutez 3 points à votre
+      total d'HABILETÉ.
+      <br>
+      GOULE HABILETÉ: 8 ENDURANCE : 7
+      <br>
+      Dès que la Goule vous aura infligé deux blessures, vous vous rendrez <a
+        href="186.html">à cet endroit.</a> . Si vous êtes vainqueur, rendez-vous
+      <a href="29.html">ici.</a>
+
+    </p> <footer>
+      <a href='125.html'><—</a> Parcourir les pages <a
+        href='127.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="zombie" src="../sons/zombie.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+            var imageson = document.getElementById('image126'),
+                zombie = document.getElementById('zombie'),
+                audios = document.querySelectorAll('audio');
+            console.log(audios);
+            imageson.addEventListener('mouseover', function() {
+              [].forEach.call(audios, function(audio) {
+                // do whatever
+                audio.play();
+              });
+              }, false);
+          </script>
+  </body>
+</html>

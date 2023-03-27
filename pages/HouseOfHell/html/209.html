@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 209</title>
+    <link rel="stylesheet" href="../css/chapitre209.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>209</b></h3>
+    <p>
+      La pièce doit être une espèce de cachot car, le long d'un mur, sont
+      alignées quatre cellules dotées de forts barreaux de fer. Il semble
+      qu'il
+      n'y ait personne du côté où vous vous trouvez, aussi faites-vous
+      quelques
+      pas à l'intérieur de la pièce. Alors que vous avancez, une petite
+      branche
+      craque sous vos pieds, et trois êtres crasseux, échevelés, et vêtus de
+      guenilles, bondissent dans trois des cellules.
+
+      <img src="../img/images_paragraphes/209.png" id="image209">
+
+      Ils se précipitent vers les barreaux en vous suppliant de les délivrer.
+      En
+      gémissant, ils vous disent qu'ils ont été capturés par les créatures du
+      Comte de Brume et emprisonnés en attendant quelque horrible destin. Dans
+      la cellule la plus proche de vous se tient une jeune fille ; son visage
+      et
+      ses cheveux sont d'une saleté repoussante et elle est en larmes. Dans la
+      seconde cellule est emprisonné un homme de grande taille au visage
+      buriné.
+      Il a accepté sa mort, mais vous demande de mettre fin à ses jours
+      sur-le-champ, afin de priver le Comte de Brume de ce plaisir. Dans la
+      troisième cellule se tient un homme chauve revêtu d'une robe de bure. Il
+      reste silencieux. Désirez-vous porter secours à ces prisonniers ? Dans
+      ce
+      cas, vous pouvez <a href="322.html">adresser la parole à la jeune fille</a>
+      , à <a href="266.html">l'homme de grande taille</a>, ou à <a
+        href="363.html">l'homme chauve</a>. Mais <a href="91.html">vous pouvez
+        choisir aussi de ne pas leur
+        parler. Vous quittez alors cette pièce.</a>
+    </p> <footer>
+      <a href='208.html'><—</a> Parcourir les pages <a
+        href='210.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="barreau" src="../sons/barreau.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+                            var imageson = document.getElementById('image209'),
+                            barreau = document.getElementById('barreau'),
+                                audios = document.querySelectorAll('audio');
+                            console.log(audios);
+                            imageson.addEventListener('mouseover', function() {
+                              [].forEach.call(audios, function(audio) {
+                                // do whatever
+                                audio.play();
+                              });
+                              }, false);
+      </script>
+  </body>
+</html>

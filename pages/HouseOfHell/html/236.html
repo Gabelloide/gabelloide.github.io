@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 236</title>
+    <link rel="stylesheet" href="../css/chapitre236.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>236</b></h3>
+    <p>
+      Assené de derrière le rideau, un coup violent vous atteint en pleine
+      poitrine et vous projette à terre. Vous perdez 2 points d'ENDURANCE, et
+      vous ajoutez 2 points à votre total de PEUR. Si vous êtes toujours
+      vivant,
+      vous vous remettez en un éclair sur vos pieds alors que le rideau
+      s'écarte
+      lentement, laissant apparaître un monstre d'aspect vaguement humain.
+      <img src="../img/images_paragraphes/236.png" id="image236">
+
+      Sa peau est d'une couleur verdâtre, et bien que ses immenses yeux
+      semblent
+      vous fixer avec intensité, c'est au-delà de vous que son regard se
+      porte.
+      Sa mâchoire s'ouvre largement, découvrant une bouche à moitié plantée de
+      dents rougeâtres. Il est vêtu de loques. Il s'avance vers vous pour vous
+      attaquer. Et vous allez devoir combattre un ZOMBIE.
+      <br>
+      ZOMBIE HABILETÉ: 7 ENDURANCE : 6
+      <br>
+      Si vous êtes vainqueur, rendez vous <a href="114.html">ici.</a>
+    </p> <footer>
+      <a href='235.html'><—</a> Parcourir les pages <a
+        href='237.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="zombie2" src="../sons/zombie2.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+          var imageson = document.getElementById('image236'),
+          zombie2 = document.getElementById('zombie2'),
+          audios = document.querySelectorAll('audio');
+          console.log(audios);
+          imageson.addEventListener('mouseover', function() {
+          [].forEach.call(audios, function(audio) {
+          // do whatever
+          audio.play();
+          });
+          }, false);
+        </script>
+  </body>
+</html>

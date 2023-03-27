@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 98</title>
+    <link rel="stylesheet" href="../css/chapitre98.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>98</b></h3>
+    <p>
+      Vous poussez la porte avec précaution tout d'abord, mais, comme il règne
+      dans la pièce l'obscurité la plus totale, vous l'ouvrez en grand.
+      Aaaïïeeee ! Vous poussez un hurlement de terreur, car un corps vient de
+      dégringoler sur votre tête ! Le cadavre est celui d'un vieil homme et, à
+      en juger par l'expression figée de son visage, son agonie n'a pas dû être
+      de tout repos.
+      <img id="image98" src="../img/images_paragraphes/98.png">
+      Ajoutez 3 points à votre total de PEUR pour cette macabre rencontre et, si
+      vous êtes toujours vivant, <a href="374.html">la panique vous fait bondir
+        hors de cette
+        pièce.</a>
+    </p> <footer>
+      <a href='97.html'><—</a> Parcourir les pages <a
+        href='99.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="assiette" src="../sons/assiette.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+                    var imageson = document.getElementById('image98'),
+                    feuilles = document.getElementById('assiette'),
+                        audios = document.querySelectorAll('audio');
+                    console.log(audios);
+                    imageson.addEventListener('mouseover', function() {
+                      [].forEach.call(audios, function(audio) {
+                        // do whatever
+                        audio.play();
+                      });
+                      }, false);
+                  </script>
+  </body>
+</html>

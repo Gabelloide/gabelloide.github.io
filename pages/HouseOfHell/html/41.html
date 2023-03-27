@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 41</title>
+    <link rel="stylesheet" href="../css/chapitre41.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>41</b></h3>
+    <p>
+      En commençant par le coin le plus éloigné de la pièce, vous ouvrez les
+      placards. Le premier est une espèce de garde-robe : des robes et des
+      chemisiers sont, en effet, pendus dedans. Vous ouvrez la deuxième porte,
+      et la terreur que vous éprouvez alors vous fait bondir en arrière. Car
+      dans ce placard, se tiennent deux SQUELETTES à demi vêtus de guenilles.
+      Vous les avez certainement dérangés en ouvrant la porte, car vous les
+      voyez reprendre vie, et avancer vers vous pour vous attaquer.
+      <img src="../img/images_paragraphes/41.png" id="image41">
+
+      Ajoutez 2 points à votre total de PEUR. Si vous êtes toujours vivant, il
+      va vous falloir combattre ces deux Squelettes chacun à son tour.
+      <br>
+      HABILETÉ ENDURANCE
+      <br>
+      Premier SQUELETTE 6, 6 <br>
+      Deuxième SQUELETTE 7, 6
+      <br>
+      Si vous êtes vainqueur, <a href="338.html">vous pouvez continuer à
+        explorer la pièce</a>
+      , ou <a href="243.html">la quitter</a>.
+
+    </p> <footer>
+      <a href='40.html'><—</a> Parcourir les pages <a
+        href='42.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="os" src="../sons/os.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+                var imageson = document.getElementById('image41'),
+                feuilles = document.getElementById('os'),
+                    audios = document.querySelectorAll('audio');
+                console.log(audios);
+                imageson.addEventListener('mouseover', function() {
+                  [].forEach.call(audios, function(audio) {
+                    // do whatever
+                    audio.play();
+                  });
+                  }, false);
+              </script>
+  </body>
+</html>

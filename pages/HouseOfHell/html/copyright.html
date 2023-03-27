@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html id="corps">
+  <head>
+    <meta charset="utf-8">
+    <title>Le Manoir de l'Enfer</title>
+    <link rel="stylesheet" href="../css/copyright.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/crane.png">
+  </head>
+
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>🏠 Accueil</a></li>
+        <li><a href='comment_survivre.html'>❔ Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>📄 Indications</a></li>
+        <li><a href='debut_histoire.html'>🕷️ Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>🎃 Sommaire</a></li>
+        <li><a href='copyright.html'>✏️ Copyright</a></li>
+      </ul>
+    </nav>
+    <h1>Copyright <br> Mentions Légales</h1>
+
+    <ul>
+      <li>Titre Original : <u>House Of Hell</u></li>
+      <li>Traduit de l'Anglais par : Michel Zénon</li>
+      <li>Illustration de la Couverture : Ian Miller (1ère, 2ème et 3ème
+        éditions) | Robert Ball (5ème édition)</li>
+      <li>Illustrations intérieures : Tim Sell (1ère, 2ème, 3ème édition) |
+        Vlado Krizan (5ème édition)</li>
+      <li>Année de l’édition Anglaise : 1984</li>
+      <li>Année de la traduction Française : 1985</li>
+      <li>Edition Française : Editions Gallimard (Folio Junior)</li>
+      <li>Collection : Un Livre Dont vous êtes le héros</li>
+      <li>Numéro d'édition : 286</li>
+      <li>ISBN : 2-07-033286-1 (1ère édition)</li>
+    </ul>
+
+
+    <footer>
+      <a href="sommaire.html"><—</a> Parcourir les pages <a
+        href="1.html"> —> </a>
+    </footer>
+  </body>
+  <!-- Fichier son qui sera joué au passage de la souris sur la page-->
+  <audio id="ambiance" src="../sons/ambiance.ogg" preload="auto"></audio>
+  <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+  <script>
+    var imageson = document.getElementById('corps'),
+    ambiance = document.getElementById('ambiance'),
+    audios = document.querySelectorAll('audio');
+    console.log(audios);
+    imageson.addEventListener('mouseover', function() {
+    [].forEach.call(audios, function(audio) {
+    audio.play();
+    });
+    }, false);
+  </script>
+</html>

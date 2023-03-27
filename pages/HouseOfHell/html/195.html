@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 195</title>
+    <link rel="stylesheet" href="../css/chapitre195.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>195</b></h3>
+    <p>
+      La porte s'ouvre sans difficulté. Les murs de la pièce dans laquelle
+      vous
+      pénétrez sont couverts d'étagères, sur lesquelles s'alignent des livres
+      aux reliures de cuir. Elle n'est éclairée que par une simple bougie,
+      posée
+      sur un bureau d'apparence ancienne. Vous vous en approchez : il est fait
+      d'un bois précieux, et les poignées de cuivre des tiroirs sont
+      remarquablement travaillées. Alors que votre regard se pose sur une
+      feuille de papier qui est placée sur un sous-main, vous vous rendez
+      subitement compte que quelque chose d'étrange est en train de se
+      produire.
+      Dans le coin supérieur gauche de la feuille, s'inscrit lentement la
+      lettre
+      « T »... Le souffle coupé, vous voyez le mot « Trouvez » qui se forme
+      d'une écriture aussi malhabile que celle d'un enfant.
+      <img src="../img/images_paragraphes/195.png" id="image195">
+      Vous ajoutez 1 point à votre total de PEUR. Un message, qui selon toute
+      apparence vous est destiné, apparaît alors lentement : « Trouvez Shekou
+      ».
+      Qui est Shekou ? Ou qu'est-ce que c'est ? Vous vous saisissez de la
+      feuille de papier, et vous faites le tour du bureau pour l'approcher de
+      la
+      bougie. Mais aussi vite qu'il est apparu, le message disparaît.
+      Maintenant vous pouvez <a href="62.html">jeter un coup d'œil aux livres</a>,
+      ou <a href="54.html">quitter la pièce</a>.
+    </p> <footer>
+      <a href='194.html'><—</a> Parcourir les pages <a
+        href='196.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="crayon" src="../sons/crayon.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+                      var imageson = document.getElementById('image195'),
+                      crayon = document.getElementById('crayon'),
+                          audios = document.querySelectorAll('audio');
+                      console.log(audios);
+                      imageson.addEventListener('mouseover', function() {
+                        [].forEach.call(audios, function(audio) {
+                          // do whatever
+                          audio.play();
+                        });
+                        }, false);
+        </script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+@font-face {
+    font-family: Halloween;
+    src: url(../font/hallo.ttf);
+}
+
+@font-face {
+    font-family: Corps;
+    src: url(../font/corps.ttf);
+}
+
+/* LA BARRE DE NAVIGATION */
+#menu {
+    font-family: corps;
+    background: rgba(38, 46, 74, 0.7);
+    color: #FFF;
+    height: 40px;
+    position: relative;
+}
+
+#menu ul,
+#menu li {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+#menu ul {
+    width: 100%;
+}
+
+#menu li {
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+#menu a {
+    display: block;
+    line-height: 40px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/* Effets de transition lors de survol + changement de couleur */
+#menu li a:hover {
+    color: rgba(38, 46, 74, 1);
+    background: orange;
+    transition: all 0.5s ease-out;
+}
+
+#menu li a {
+    transition: all 0.5s ease-out;
+}
+
+/* PAGE HTML */
+html {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    color: white;
+}
+
+
+header {
+    background-color: rgba(38, 46, 74, 0.7);
+    transition: all 0.3s ease-out;
+    padding: 1%;
+}
+
+header:hover {
+    background-color: rgba(38, 46, 74, 1);
+    transition: all 0.3s ease-out;
+}
+
+header h1,
+h2,
+h3 {
+    margin: 0;
+    text-align: center;
+    font-family: Halloween;
+}
+
+header h1 {
+    font-size: 72px;
+    color: white;
+}
+
+header h2 {
+    margin-top: 1%;
+    font-size: 48px;
+}
+
+body {
+    text-align: justify;
+    margin: 0;
+    font-family: Corps;
+}
+
+body p {
+    font-size: 32px;
+}
+
+#conteneur_0 {
+    display: flex;
+}
+
+#conteneur_0 p {
+    text-align: justify;
+    background-color: rgba(38, 46, 74, 0.7);
+    transition: all 0.3s ease-out;
+    border-radius: 25px;
+    padding: 1%;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 20%;
+}
+
+#conteneur_0 p:hover {
+    background-color: rgba(38, 46, 74, 1);
+    transition: all 0.3s ease-out;
+}
+
+#conteneur_0 img {
+    width: 20%;
+    display: block;
+    float: right;
+    margin-right: 1%;
+    border: #262E4A solid 5px;
+    border-radius: 25px;
+}
+
+body>h1 {
+    font-family: Halloween;
+    text-align: center;
+    font-size: 72px;
+    color: orange;
+}
+
+#conteneur_1 {
+    background-color: rgba(38, 46, 74, 0.7);
+    transition: all 0.3s ease-out;
+    display: inline-block;
+}
+
+#conteneur_1:hover {
+    background-color: rgba(38, 46, 74, 1);
+    transition: all 0.3s ease-out;
+}
+
+#conteneur_1 p {
+    float: left;
+    margin-left: 1%;
+}
+
+#conteneur_1 img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+#conteneur_1 ul {
+    list-style-type: disc;
+    width: 40%;
+    margin-left: 5%;
+    font-size: 24px;
+}
+
+a {
+    color: orange;
+}
+
+#conteneur_indications,
+#conteneur_tuto {
+    background-color: rgba(38, 46, 74, 0.7);
+    transition: all 0.3s ease-out;
+    border-radius: 25px;
+    margin: 1%;
+    padding: 1%;
+}
+
+#conteneur_indications:hover,
+#conteneur_tuto:hover {
+    background-color: rgba(38, 46, 74, 1);
+    transition: all 0.3s ease-out;
+}
+
+#conteneur_tuto {
+    padding: 5%;
+}
+
+#conteneur_tuto p {
+    font-size: 24px;
+}
+
+#conteneur_tuto img {
+    display: block;
+    margin: 0 auto;
+}
+
+#conteneur_tuto ol {
+    text-align: justify;
+    font-size: 24px;
+}
+
+#conteneur_tuto ol li {
+    padding-left: 1%;
+}
+
+#conteneur_tuto h1 {
+    text-align: center;
+    font-size: 50px;
+    color: orange;
+    margin: 0;
+}
+
+body img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+footer {
+    background-color: rgba(38, 46, 74, 0.7);
+    transition: all 0.3s ease-out;
+    padding: 5%;
+    font-size: 32px;
+    text-align: center;
+}
+
+footer:hover {
+    background-color: rgba(38, 46, 74, 1);
+    transition: all 0.3s ease-out;
+}
+
+footer a {
+    text-decoration: none;
+}

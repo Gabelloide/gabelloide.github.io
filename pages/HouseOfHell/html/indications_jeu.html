@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html id="corps">
+    <head>
+        <meta charset="utf-8">
+        <title>Le Manoir de l'Enfer</title>
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/crane.png">
+    </head>
+
+    <body>
+        <header>
+            <h1>Le Manoir de l'Enfer</h1>
+            <h2>Un livre dont vous êtes le Héros</h2>
+        </header>
+        <!-- Barre de navigation -->
+        <nav id='menu'>
+            <ul>
+                <li><a href='index.html'>🏠 Accueil</a></li>
+                <li><a href='comment_survivre.html'>❔ Comment Survivre</a></li>
+                <li><a href='indications_jeu.html'>📄 Indications</a></li>
+                <li><a href='debut_histoire.html'>🕷️ Début de l'Histoire</a></li>
+                <li><a href='sommaire.html'>🎃 Sommaire</a></li>
+                <li><a href='copyright.html'>✏️ Copyright</a></li>
+
+            </ul>
+        </nav>
+        <h1>Indications sur le Jeu</h1>
+        <div id="conteneur_indications">
+            <p>Il y a un bon chemin qui vous mènera au Maître
+                du Manoir et il vous
+                faudra plusieurs tentatives pour le découvrir. Prenez des notes
+                et
+                dessinez une carte au fur et à mesure de votre exploration.
+                Cette
+                carte vous servira lors de prochaines aventures et vous
+                permettra
+                d'avancer plus rapidement pour atteindre des endroits encore
+                inconnus.
+                <br>
+                Notez bien toutes les recommandations qui vous seront faites,
+                tous
+                les messages qui vous seront adressés, tous les numéros de
+                référence
+                qui vous seront donnés. Et prenez garde ! car certaines pièces
+                recèlent des pièges mortels, et d'autres sont des chambres de
+                torture. </p>
+            <p>
+                Comprenez bien que les paragraphes qui constituent ce livre
+                n'ont
+                aucun sens lus dans un ordre numérique. Il est essentiel que
+                vous ne
+                lisiez que les paragraphes qui vous sont indiqués. Ne pas
+                respecter
+                ce principe n'amènerait que confusion et pourrait diminuer
+                l'intérêt
+                du jeu. </p>
+            <p>
+                Il n'y a qu'un minimum de risques à prendre pour découvrir le
+                bon
+                chemin, et n'importe quel joueur, même si ses points de départ
+                sont
+                faibles, peut trouver très facilement la voie.
+                <br>
+                Puissent les forces du bien vous accompagner dans le Manoir de
+                l'Enfer !</p>
+        </div>
+        <footer>
+            <a href="comment_survivre.html"><—</a> Parcourir les pages <a
+                href="debut_histoire.html"> —> </a>
+        </footer>
+        <!-- Fichier son qui sera joué au passage de la souris sur la page-->
+        <audio id="ambiance" src="../sons/ambiance.ogg" preload="auto"></audio>
+        <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+        <script>
+            var imageson = document.getElementById('corps'),
+            ambiance = document.getElementById('ambiance'),
+            audios = document.querySelectorAll('audio');
+            console.log(audios);
+            imageson.addEventListener('mouseover', function() {
+            [].forEach.call(audios, function(audio) {
+            audio.play();
+            });
+            }, false);
+        </script>
+    </body>
+</html>

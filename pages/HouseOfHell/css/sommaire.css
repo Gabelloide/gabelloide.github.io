@@ -1,0 +1,38 @@
+@import url(index.css);
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 40px;
+    text-align: center;
+}
+
+#conteneur_principal {
+    margin: 2%;
+    display: flex;
+    padding: 1%;
+    background-color: rgba(38, 46, 74, 0.7);
+    transition: all 0.3s ease-out;
+    border-radius: 25px;
+}
+
+#conteneur_principal:hover {
+    background-color: rgba(38, 46, 74, 1);
+    transition: all 0.3s ease-out;
+}
+
+#sommaire_0,
+#sommaire_1,
+#sommaire_2,
+#sommaire_3 {
+    padding: 1%;
+    width: 50%;
+    float: left;
+}

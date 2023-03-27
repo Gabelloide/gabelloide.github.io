@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 14</title>
+    <link rel="stylesheet" href="../css/chapitre14.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>14</b></h3>
+    <p>
+      L'odeur abominable qui règne dans la pièce vous soulève le cœur, et vous
+      cloue sur place. La pièce elle-même, taillée dans le roc, n'a rien de
+      particulièrement remarquable. Mais les corps décapités de cinq boucs sont
+      dispersés sur le sol et trois DANOIS GÉANTS se disputent rageusement les
+      cadavres.
+      <img id="image14" src="../img/images_paragraphes/14.png">
+
+      A votre arrivée, ils se tournent vers vous, furieux d'avoir été
+      interrompus dans leur festin. Leurs gueules écument et ils grognent avec
+      hargne. L'un des molosses bondit sur vous, et vous devez le combattre.
+      <br>
+      DANOIS GÉANT
+      <br>
+      HABILETÉ: 7 ENDURANCE : 5
+      <br>
+      <a href="94.html">Si vous êtes vainqueur, continuez ici.</a>
+    </p> <footer>
+      <a href='13.html'><—</a> Parcourir les pages <a
+        href='15.html'> —> </a>
+    </footer>
+
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="chien" src="../sons/chien.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+        var imageson = document.getElementById('image14'),
+            chien = document.getElementById('chien'),
+            audios = document.querySelectorAll('audio');
+        console.log(audios);
+        imageson.addEventListener('mouseover', function() {
+          [].forEach.call(audios, function(audio) {
+            // do whatever
+            audio.play();
+          });
+          }, false);
+      </script>
+  </body>
+</html>

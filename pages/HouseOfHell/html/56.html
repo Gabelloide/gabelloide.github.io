@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 56</title>
+    <link rel="stylesheet" href="../css/chapitre56.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>56</b></h3>
+    <p>
+      Alors que le combat vient de s'engager, vous constatez que l'homme n'est
+      pas plié en deux. Vous avez affaire à un BOSSU.
+      <img id="image56" src="../img/images_paragraphes/56.png">
+      <br>
+      BOSSU HABILETÉ: 7 ENDURANCE : 7
+      <br>
+      Après trois Assauts, <a href="72.html">rendez-vous ici.</a>
+    </p> <footer>
+      <a href='55.html'><—</a> Parcourir les pages <a
+        href='57.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="zombie" src="../sons/zombie.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+                var imageson = document.getElementById('image56'),
+                feuilles = document.getElementById('zombie'),
+                    audios = document.querySelectorAll('audio');
+                console.log(audios);
+                imageson.addEventListener('mouseover', function() {
+                  [].forEach.call(audios, function(audio) {
+                    // do whatever
+                    audio.play();
+                  });
+                  }, false);
+              </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+@import url(index.css);
+
+ul {
+    padding: 5%;
+    background-color: rgba(38, 46, 74, 0.7);
+    transition: all 0.3s ease-out;
+    border-radius: 25px;
+    margin: 1%;
+    font-size: 32px;
+    list-style-type: none;
+}
+
+ul:hover {
+    background-color: rgba(38, 46, 74, 1);
+    transition: all 0.3s ease-out;
+}

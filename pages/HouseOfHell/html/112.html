@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 112</title>
+    <link rel="stylesheet" href="../css/chapitre112.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>112</b></h3>
+    <p>
+      La porte s'ouvre et vous vous apprêtez à pénétrer dans la pièce, mais ce
+      que vous y voyez vous fait vous arrêter net. Vous êtes au seuil d'une
+      chambre de torture. Dans un coin est posé une espèce de sarcophage dont
+      l'intérieur est garni de pointes acérées. Au centre de la chambre se
+      trouve un chevalet. Et, pendant du plafond, à gauche de la pièce, vous
+      pouvez voir deux cages : la première est juste assez grande pour qu'un
+      homme puisse s'y tenir accroupi, alors que, s'il est possible de se tenir
+      debout dans la seconde, il est en revanche totalement impossible d'y faire
+      le moindre mouvement. Cette découverte vous glace d'horreur. Soudain, deux
+      mains saisissent vos poignets, vous tirent et vous projettent au milieu de
+      la pièce ! Surgi de derrière la porte, apparaît un homme massif aux bras
+      puissants. Il porte un tablier de cuir, et un bandeau noir cache son œil
+      gauche.
+      <img id="image112" src="../img/images_paragraphes/112.png">
+      « Eh bien ! s'exclame-t-il, qui s'est introduit dans notre Manoir ? Allez,
+      parlez... Avez- vous perdu votre langue ? » Qu'allez-vous lui répondre ?
+      Allez-vous <a href="4.html">lui dire que vous cherchez à sortir du Manoir</a>
+      et que vous
+      seriez heureux de trouver le plus court chemin pour cela, ou préférez-vous
+      <a href="16.html">lui mentir en lui déclarant que vous êtes un des amis
+        du Maître</a>?
+
+    </p> <footer>
+      <a href='111.html'><—</a> Parcourir les pages <a
+        href='113.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="chaine" src="../sons/chaine.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+            var imageson = document.getElementById('image112'),
+                chien = document.getElementById('chaine'),
+                audios = document.querySelectorAll('audio');
+            console.log(audios);
+            imageson.addEventListener('mouseover', function() {
+              [].forEach.call(audios, function(audio) {
+                // do whatever
+                audio.play();
+              });
+              }, false);
+          </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 318</title>
+    <link rel="stylesheet" href="../css/chapitre318.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>318</b></h3>
+    <p>
+      Quelques instants plus tard, Franklin, le majordome, pénètre dans la
+      salle
+      à manger. Il semble stupéfait de vous voir là. Vous demandez à parler au
+      Maître du Manoir et, après s'être légèrement incliné, il disparaît. Dix
+      minutes plus tard, le Comte de Brume, le visage crispé de colère, fait
+      irruption dans la pièce, Franklin sur les talons. Ils se tiennent face à
+      vous, de l'autre côté de la table, et vous fixent avec la plus grande
+      attention.
+
+      <img src="../img/images_paragraphes/318.png" id="image318">
+
+      « Pourquoi me déranger à cette heure de la nuit ? » demande le Comte
+      d'une
+      voix autoritaire. Vous répondez que vous n'ignorez rien du Manoir, de
+      ses
+      habitants, et des pratiques infernales qui s'y trament. Vous ajoutez que
+      vous avez décidé d'y mettre un terme en le faisant disparaître, lui, le
+      Comte de Brume. Les deux hommes échangent un regard, hochent la tête, et
+      portent de nouveau les yeux sur vous. Puis ils s'avancent vers vous,
+      chacun par un côté de la table. Le Comte est à votre gauche, son
+      majordome
+      à votre droite. Vite, vous devez choisir lequel de ces deux adversaires
+      vous allez combattre le premier. Vous pouvez tout d'abord <a
+        href="30.html">affronter
+        le
+        Comte</a>, ou alors vous préférez <a href="351.html">commencer avec
+        Franklin.</a>
+    </p> <footer>
+      <a href='317.html'><—</a> Parcourir les pages <a
+        href='319.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="coeur" src="../sons/coeur.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+                var imageson = document.getElementById('image318'),
+                coeur = document.getElementById('coeur'),
+                audios = document.querySelectorAll('audio');
+                console.log(audios);
+                imageson.addEventListener('mouseover', function() {
+                [].forEach.call(audios, function(audio) {
+                // do whatever
+                audio.play();
+                });
+                }, false);
+          </script>
+  </body>
+</html>

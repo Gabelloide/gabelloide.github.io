@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 71</title>
+    <link rel="stylesheet" href="../css/chapitre71.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>71</b></h3>
+    <p>
+      Vous ouvrez la porte, et vous jetez un coup d'œil à l'intérieur de la
+      pièce. Le sol est couvert de poussière et les murs taillés dans le roc
+      sont nus. Une table en bois grossier et une chaise sont poussées contre
+      l'un des murs et, assis à cette table, vous voyez un petit homme à
+      l'aspect tourmenté vêtu d'une toge blanche. Une tête de bouc est posée
+      devant lui.
+      <img id="image71" src="../img/images_paragraphes/71.png">
+      « Bonjour, dit-il nerveusement, Salut au Maître. Je suis prêt à me
+      repentir. Où en est la cérémonie ? Et, hum... est-ce mon tour maintenant ?
+      » Il se penche alors vers vous et vous murmure : « Je ne suis pas pauvre.
+      Aidez-moi à m'échapper de ce lieu et vous serez très généreusement
+      récompensé.» Qu'allez-vous faire ? Allez-vous <a href="214.html">lui dire
+        qui vous êtes</a>
+      ou <a href="334.html">le laisser continuer à parler sans manifester la
+        moindre émotion</a> ?
+    </p> <footer>
+      <a href='70.html'><—</a> Parcourir les pages <a
+        href='72.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="grotte" src="../sons/grotte.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+                    var imageson = document.getElementById('image71'),
+                    feuilles = document.getElementById('grotte'),
+                        audios = document.querySelectorAll('audio');
+                    console.log(audios);
+                    imageson.addEventListener('mouseover', function() {
+                      [].forEach.call(audios, function(audio) {
+                        // do whatever
+                        audio.play();
+                      });
+                      }, false);
+                  </script>
+  </body>
+</html>

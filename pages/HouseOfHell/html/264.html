@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 264</title>
+    <link rel="stylesheet" href="../css/chapitre264.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+</ul>
+</nav>
+<h3><b>264</b></h3>
+      <p>
+        Vous vous relevez en grimaçant de douleur, et vous regardez autour de
+        vous. Vous vous trouvez dans un long et sombre tunnel au bout duquel
+        vous
+        apercevez une lueur. Vous vous avancez avec précaution, et vous
+        ralentissez encore l'allure lorsque des bruits de voix commencent à vous
+        parvenir ; ou plus exactement, une espèce de chant long et monotone.
+        Bientôt, vous pouvez voir ce qui se passe. Une quarantaine de personnes
+        sont assemblées autour d'un grand feu. Un peu à l'écart du feu est
+        dressé
+        un autel sur lequel une jeune femme est étendue, pieds et mains liés. Il
+        vous est impossible de voir les visages des personnes présentes, car
+        elles
+        ont toutes la tête recouverte d'une tête de bouc. Devant l'autel, et en
+        son milieu, se tient un personnage de grande taille, vêtu d'une sorte de
+        robe de cérémonie. Son masque a été teint en mauve. Il tient à la main
+        une
+        dague effilée, et il se prépare à sacrifier sa jeune victime.
+
+        <img src="../img/images_paragraphes/264.png" id="image264">
+
+        Allez-vous </a><a href="314.html">assister à la cérémonie</a>, essayer
+      de
+      <a href="80.html">chercher le moyen de vous enfuir</a> ou <a
+        href="328.html">porter secours à
+        la jeune femme</a> ?
+
+    </p> <footer>
+      <a href='263.html'><—</a> Parcourir les pages <a
+        href='265.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="insecte" src="../sons/insecte.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+              var imageson = document.getElementById('image264'),
+              insecte = document.getElementById('insecte'),
+              audios = document.querySelectorAll('audio');
+              console.log(audios);
+              imageson.addEventListener('mouseover', function() {
+              [].forEach.call(audios, function(audio) {
+              // do whatever
+              audio.play();
+              });
+              }, false);
+    </script>
+  </body>
+</html>

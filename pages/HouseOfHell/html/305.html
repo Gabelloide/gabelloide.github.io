@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 305</title>
+    <link rel="stylesheet" href="../css/chapitre305.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>305</b></h3>
+    <p>
+      La porte est fermée par un verrou qui peut s'ouvrir de l'extérieur. Vous
+      tournez le verrou, vous ouvrez la porte et avec méfiance, vous jetez un
+      coup d'oeil dans la pièce. Les murs en sont nus, et elle n'est meublée
+      que
+      d'une table et d'une chaise. Un homme vêtu d'une robe blanche dort,
+      recroquevillé dans un coin.
+
+      <img src="../img/images_paragraphes/305.png" id="image305">
+
+      Il s'éveille alors que vous vous avancez. « Oh, bonjour, dit-il : je
+      suppose que vous êtes venu pour moi, n'est-ce pas ? » Allez-vous lui
+      répondre <a href="127.html">oui</a>, ou <a href="153.html">non</a> ?
+
+    </p> <footer>
+      <a href='304.html'><—</a> Parcourir les pages <a
+        href='306.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="ronfle" src="../sons/ronfle.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+            var imageson = document.getElementById('image305'),
+            ronfle = document.getElementById('ronfle'),
+            audios = document.querySelectorAll('audio');
+            console.log(audios);
+            imageson.addEventListener('mouseover', function() {
+            [].forEach.call(audios, function(audio) {
+            // do whatever
+            audio.play();
+            });
+            }, false);
+      </script>
+  </body>
+</html>

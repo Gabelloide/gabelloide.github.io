@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapitre 332</title>
+    <link rel="stylesheet" href="../css/chapitre332.css">
+  </head>
+  <body>
+    <header>
+      <h1>Le Manoir de l'Enfer</h1>
+      <h2>Un livre dont vous êtes le Héros</h2>
+    </header>
+    <!-- Barre de navigation -->
+    <nav id='menu'>
+      <ul>
+        <li><a href='index.html'>Accueil</a></li>
+        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
+        <li><a href='indications_jeu.html'>Indications</a></li>
+        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
+        <li><a href='sommaire.html'>Sommaire</a></li>
+        <li><a href='copyright.html'>Copyright</a></li>
+      </ul>
+    </nav>
+    <h3><b>332</b></h3>
+    <p>
+      Au bout du balcon, se trouve une solide porte en bois. Alors que vous
+      vous
+      demandez si vous allez essayer de pénétrer dans cette nouvelle pièce, un
+      bruit provenant de derrière vous, vous fait sursauter. Vous vous
+      retournez
+      vivement, et poussez un soupir de soulagement en constatant qu'il ne
+      s'agit que d'un courant d'air qui agite des tapisseries pendues au mur.
+      Votre crainte n'était pas fondée, et vous vous tournez vers la porte.
+      Avec
+      terreur, vous découvrez alors une silhouette pâle et vaporeuse qui se
+      dresse devant vous.
+
+      <img src="../img/images_paragraphes/332.png" id="image332">
+
+      L'apparition est celle d'une jeune femme d'une vingtaine d'années, à la
+      longue chevelure. Elle est vêtue d'une robe blanche de mariée qui a dû
+      voir de meilleurs jours car elle est froissée et déchirée. « Dieu merci,
+      je vous ai trouvé à temps, dit-elle. Je dois vous parler sans perdre un
+      instant. Venez, entrons dans cette pièce. » Allez-vous <a href="73.html">la
+        suivre comme
+        elle vous le demande</a> ou, redoutant un piège,
+      préférez-vous <a href="279.html">faire demi-tour</a> ? Quel que soit
+      votre
+      choix, vous ajoutez un point à votre total de PEUR pour cette rencontre.
+    </p> <footer>
+      <a href='331.html'><—</a> Parcourir les pages <a
+        href='333.html'> —> </a>
+    </footer>
+    <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
+    <audio id="flute" src="../sons/flute.ogg" preload="auto"></audio>
+    <!-- Script pour le fichier son qui sera joué au passage de la souris sur l'image-->
+    <script>
+                    var imageson = document.getElementById('image332'),
+                    flute = document.getElementById('flute'),
+                    audios = document.querySelectorAll('audio');
+                    console.log(audios);
+                    imageson.addEventListener('mouseover', function() {
+                    [].forEach.call(audios, function(audio) {
+                    // do whatever
+                    audio.play();
+                    });
+                    }, false);
+      </script>
+  </body>
+</html>
