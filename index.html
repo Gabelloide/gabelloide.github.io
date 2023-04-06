@@ -9,16 +9,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="common/css/style.css" rel="stylesheet" media="all" type="text/css">
+    <link href="common/css/style.css" rel="stylesheet" media="all"
+      type="text/css" id="theme-link">
     <!-- ----- -->
     <link rel="icon" type="image/png" sizes="512x512"
-    href="common/images/website_icon.png">
+      href="common/images/website_icon.png">
     <!-- ----- -->
     <title>Home | Gabelloide</title>
   </head>
 
-
   <body>
+    
+    <button id="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    <script src="common/scripts/main_theme_toggler.js"></script>
+
+
     <p id="scroll_up_button"><a id="scroll_up" href="#"><i
           class="fa-solid
           fa-circle-arrow-up"></i></a></p>
@@ -31,7 +36,7 @@
       </ul>
     </nav>
     <section id="Start">
-      <img src="common/images/main_page.jpg" id="main_image">
+      <img src="common/images/main_page.png" id="main_image">
     </section>
     <section id="Presentation">
       <h1>std::cout << "<span><i class="fa-solid fa-circle-info"></i> About</span>"
@@ -83,7 +88,8 @@
           <li><i class="fa-regular fa-copyright"></i> C++ : I am currently
             learning it since September 2022.</li>
 
-            <li><i class="fa-brands fa-java"></i> Java : The newest language that I'm currently learning.</li>
+          <li><i class="fa-brands fa-java"></i> Java : The newest language that
+            I'm currently learning.</li>
 
           <li><i class="fa-solid fa-camera"></i> Photoshop: I am eager to test
             things and to learn new techniques
@@ -111,7 +117,8 @@
           softwares. Also, I have one computer at home and one laptop that I
           bring
           to University.
-          You can learn more about <a href="pages/workspace.html">my complete setup on
+          You can learn more about <a href="pages/workspace.html">my complete
+            setup on
             this dedicated page!</a>
         </p>
       </section>

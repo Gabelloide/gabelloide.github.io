@@ -14,8 +14,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 span {
   color: #43c19a;
 }
@@ -25,10 +23,11 @@ a {
   transition: all 0.5s ease-out;
 }
 
-details > summary {
+details>summary {
   list-style: none;
 }
-details > summary::-webkit-details-marker {
+
+details>summary::-webkit-details-marker {
   display: none;
 }
 
@@ -39,11 +38,12 @@ details {
   transition: all 0.5s ease-out;
 }
 
-details:not([open]) >summary>h1::before {
-  content : "○ " 
+details:not([open])>summary>h1::before {
+  content: "○ "
 }
-details[open] >summary>h1::before {
-  content : "● "
+
+details[open]>summary>h1::before {
+  content: "● "
 }
 
 details:hover {
@@ -64,18 +64,41 @@ details:hover {
   background-color: #bd6bc0;
 }
 
-#scroll_down { /* The arrow is a link by itself, we are removing any decoration */
+#scroll_down {
+  /* The arrow is a link by itself, we are removing any decoration */
   text-decoration: none;
 }
 
-#para_scroll { /* The paragraph that contains the arrow to scroll down, needed to be centered */
+#para_scroll {
+  /* The paragraph that contains the arrow to scroll down, needed to be centered */
   text-align: center;
 }
 
-
-.fa-circle-arrow-down:hover { /* Arrow to scroll down, general properties */
+.fa-circle-arrow-down:hover {
+  /* Arrow to scroll down, general properties */
   transition: all 0.3s ease-out;
   transform: rotate(1turn);
 }
 
+#theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  border: 2px solid #43c19a;
+  color: #43c19a;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed;
+  top:    0;
+  right:   0;
+  z-index: 1;
+  margin: 0.5% 0.5% 0 0;
+  transition: all 0.3s ease-out;
+}
 
+#theme-toggle:hover {
+  color: #bd6bc0;
+  border: 2px solid #bd6bc0;
+  transition: all 0.3s ease-out;
+}

@@ -85,7 +85,8 @@ form.dark-mode p {
     background-color: #181A1B;
 }
 
-form.dark-mode input,form.dark-mode label,
+form.dark-mode input,
+form.dark-mode label,
 form.dark-mode #message {
     color: white;
     background-color: #181A1B;

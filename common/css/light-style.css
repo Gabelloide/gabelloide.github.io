@@ -1,0 +1,78 @@
+@import "style.css";
+
+html {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+#menu, #menu a, details {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+span {
+  color: #576CBC;
+}
+
+h1 {
+  color: #19376D;
+}
+
+a {
+  color: #576CBC;
+}
+
+a:hover {
+  color: #19376D;
+}
+
+#menu li a:hover {
+  border-radius: 10px;
+  color: #000000;
+  background: #A5D7E8;
+  transition: all 0.5s ease-out;
+}
+
+details:hover {
+  background: #A5D7E8;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  background-color: #A5D7E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #576CBC;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #19376D;
+}
+
+#theme-toggle {
+  border: 2px solid #576CBC;
+  color: #576CBC;
+}
+
+#theme-toggle:hover {
+  color: #19376D;
+  border: 2px solid #19376D;
+}
+
+
+/*  PROJECT'S GRID */
+.grid {
+  color: #000000;
+}
+
+.grid div {
+  background-color: #576CBC;
+  color: #A5D7E8;
+}
+
+.grid div:hover {
+  background-color: #A5D7E8;
+  transition: all 0.3s ease-out;
+  color:#000000 ;
+}
