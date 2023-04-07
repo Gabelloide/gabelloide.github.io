@@ -6,6 +6,10 @@ body {
   padding: 25px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .fa-circle-arrow-down { /* Flèche vers le bas */
   transition: all 0.9s ease-out;
   visibility: hidden;
