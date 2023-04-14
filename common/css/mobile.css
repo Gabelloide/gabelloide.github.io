@@ -10,7 +10,8 @@ ul {
   list-style-type: none;
 }
 
-.fa-circle-arrow-down { /* Flèche vers le bas */
+.fa-circle-arrow-down {
+  /* Flèche vers le bas */
   transition: all 0.9s ease-out;
   visibility: hidden;
   position: absolute;
@@ -19,8 +20,8 @@ ul {
 #scroll_up_button {
   visibility: hidden;
   position: fixed;
-  right:    0;
-  bottom:   0;
+  right: 0;
+  bottom: 0;
   font-size: 2em;
   margin: 0 0.5% 0.5% 0
 }
@@ -104,16 +105,14 @@ details section {
 
 
 /*  PROJECT'S GRID */
-.grid {
+#project_grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 5px;
   grid-auto-rows: minmax(100px, auto);
-  color: #43c19a;
 }
 
-.grid div {
-  background-color: #121820;
+#project_grid div {
   text-align: center;
   border-radius: 10px;
   transition: all 0.5s ease-out;
@@ -121,12 +120,32 @@ details section {
   font-size: 25px;
 }
 
-.grid div:hover {
-  background-color: #1f2937;
-  transition: all 0.3s ease-out;
-  color:#bd6bc0 ;
+#project_grid a {
+  text-decoration: none;
 }
 
-.grid a {
+/*  SKILLS'S GRID */ 
+#skills_grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+#skills_grid div {
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.5s ease-out;
+  padding: 5%;
+  font-size: 25px;
+}
+
+#skills_grid a {
   text-decoration: none;
+}
+
+#skills_grid img {
+  display: inline-block;
+  margin: 5px;
+  width: 75px;
 }

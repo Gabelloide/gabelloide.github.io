@@ -2,15 +2,16 @@ html {
   font-size: 20px;
 }
 
-.fa-circle-arrow-down { /* Arrow to scroll down */
+.fa-circle-arrow-down {
+  /* Arrow to scroll down */
   transition: all 0.9s ease-out;
   font-size: 100px;
 }
 
 #scroll_up_button {
   position: fixed;
-  right:    0;
-  bottom:   0;
+  right: 0;
+  bottom: 0;
   font-size: 2em;
   margin: 0 0.5% 0.5% 0
 }
@@ -21,8 +22,8 @@ section {
 }
 
 #main_image {
-  width: 100%;
-  margin: 0 0 0 0;
+  width: 50%;
+  margin: 0 auto;
 }
 
 img {
@@ -70,17 +71,15 @@ details summary {
 }
 
 /*  PROJECT'S GRID */
-.grid {
+#project_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   grid-auto-rows: minmax(100px, auto);
   padding: 1%;
-  color: #43c19a;
 }
 
-.grid div {
-  background-color: #121820;
+#project_grid div {
   text-align: center;
   border-radius: 20px;
   transition: all 0.5s ease-out;
@@ -88,16 +87,28 @@ details summary {
   font-size: 36px;
 }
 
-.grid div:hover {
-  background-color: #1f2937;
-  transition: all 0.3s ease-out;
-  color:#bd6bc0 ;
+/*  SKILLS'S GRID */ 
+#skills_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 1%;
 }
 
-.grid a {
-  text-decoration: none;
+#skills_grid div {
+  text-align: center;
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+  padding: 5%;
+  font-size: 36px;
 }
 
+#skills_grid img {
+  display: inline-block;
+  margin: 5px;
+  width: 75px;
+}
 
 /* NAVBAR */
 #menu {

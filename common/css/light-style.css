@@ -5,7 +5,9 @@ html {
   color: #000000;
 }
 
-#menu, #menu a, details {
+#menu,
+#menu a,
+details {
   background: #FFFFFF;
   color: #000000;
 }
@@ -15,7 +17,7 @@ span {
 }
 
 h1 {
-  color: #19376D;
+  color: #000000;
 }
 
 a {
@@ -23,7 +25,7 @@ a {
 }
 
 a:hover {
-  color: #19376D;
+  color: #000000;
 }
 
 #menu li a:hover {
@@ -56,23 +58,56 @@ details:hover {
 }
 
 #theme-toggle:hover {
-  color: #19376D;
-  border: 2px solid #19376D;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+#scroll_up {
+  color: #000000;
+}
+
+#scroll_up:hover {
+  color: #576CBC;
 }
 
 
 /*  PROJECT'S GRID */
-.grid {
+#project_grid h1 {
   color: #000000;
 }
 
-.grid div {
+#project_grid div {
   background-color: #576CBC;
-  color: #A5D7E8;
+  color: #000000;
 }
 
-.grid div:hover {
+#project_grid div:hover {
   background-color: #A5D7E8;
   transition: all 0.3s ease-out;
-  color:#000000 ;
+  color: #000000;
+}
+
+
+/* SKILL'S GRID */
+#skills_grid .skill {
+  background-color: #576CBC;
+  color: #000000;
+}
+
+#skills_grid .software {
+  background-color: #576CBC;
+  color: #000000;
+}
+
+#skills_grid .software:hover, #skills_grid .skill:hover {
+  background-color: #A5D7E8;
+  transition: all 0.3s ease-out;
+}
+
+#skills_grid a {
+  text-decoration: none;
+}
+
+#skills_grid span, #skills_grid a div h1 {
+  color: #000000;
 }

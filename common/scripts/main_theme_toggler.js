@@ -11,7 +11,7 @@ function toggleTheme() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var link = document.querySelector("link[id='theme-link']");
   var theme = localStorage.getItem("theme");
 

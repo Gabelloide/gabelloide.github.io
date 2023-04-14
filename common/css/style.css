@@ -53,6 +53,49 @@ details:hover {
 
 
 
+/*  PROJECT'S GRID */
+#project_grid {
+  color: #43c19a;
+}
+
+#project_grid div {
+  background-color: #121820;
+}
+
+#project_grid div:hover {
+  background-color: #12182090;
+  transition: all 0.3s ease-out;
+  color: #bd6bc0;
+}
+
+#project_grid a {
+  text-decoration: none;
+}
+
+/* SKILL'S GRID */
+#skills_grid .skill {
+  background-color: #121820;
+  color: #43c19a;
+}
+
+#skills_grid .software {
+  background-color: #121820;
+  color: #bd6bc0;
+}
+
+#skills_grid .software:hover, #skills_grid .skill:hover {
+  background-color: #12182090;
+  transition: all 0.3s ease-out;
+}
+
+#skills_grid a {
+  text-decoration: none;
+}
+
+
+
+
+
 /* SCROLLBAR */
 ::-webkit-scrollbar {
   background-color: #121820;
@@ -92,8 +135,8 @@ details:hover {
   font-size: 16px;
   cursor: pointer;
   position: fixed;
-  top:    0;
-  right:   0;
+  top: 0;
+  right: 0;
   z-index: 1;
   margin: 0.5% 0.5% 0 0;
   transition: all 0.3s ease-out;
