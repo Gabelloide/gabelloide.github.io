@@ -74,34 +74,45 @@ details summary {
 #project_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  grid-auto-rows: minmax(100px, auto);
+  column-gap: 50px;
+  grid-auto-rows: auto;
+  row-gap: 100px; 
   padding: 1%;
 }
 
 #project_grid div {
+  height: 100%;
   text-align: center;
   border-radius: 20px;
   transition: all 0.5s ease-out;
   padding: 5%;
-  font-size: 36px;
+  font-size: 24px;
+}
+
+#project_grid div h1 {
+  font-size: 30px;
 }
 
 /*  SKILLS'S GRID */ 
 #skills_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  grid-auto-rows: minmax(100px, auto);
+  column-gap: 50px;
+  grid-auto-rows: auto;
+  row-gap: 100px; 
   padding: 1%;
 }
 
 #skills_grid div {
+  height: 100%;
   text-align: center;
   border-radius: 20px;
   transition: all 0.5s ease-out;
-  padding: 5%;
-  font-size: 36px;
+  padding-top: 5%;
+  font-size: 24px;
+}
+#skills_grid div h1 {
+  font-size: 30px;
 }
 
 #skills_grid img {
