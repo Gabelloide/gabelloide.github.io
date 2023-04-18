@@ -124,7 +124,7 @@ details section {
   text-decoration: none;
 }
 
-/*  SKILLS'S GRID */ 
+/*  SKILLS'S GRID */
 #skills_grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);

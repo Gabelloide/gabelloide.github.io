@@ -1,123 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <!-- Icons -->
-    <link href="common/css/icons/css/fontawesome.css" rel="stylesheet">
-    <link href="common/css/icons/css/brands.css" rel="stylesheet">
-    <link href="common/css/icons/css/solid.css" rel="stylesheet">
-    <!-- ----- -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="common/css/style.css" rel="stylesheet" media="all"
-      type="text/css" id="theme-link">
-    <!-- ----- -->
-    <link rel="icon" type="image/png" sizes="512x512"
-      href="common/images/icons/website_icon.png">
-    <!-- ----- -->
-    <title>Home | Gabelloide</title>
-  </head>
 
-  <body>
+<head>
+  <!-- Icons -->
+  <link href="common/css/icons/css/fontawesome.css" rel="stylesheet">
+  <link href="common/css/icons/css/brands.css" rel="stylesheet">
+  <link href="common/css/icons/css/solid.css" rel="stylesheet">
+  <!-- ----- -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="common/css/style.css" rel="stylesheet" media="all" type="text/css" id="theme-link">
+  <!-- ----- -->
+  <link rel="icon" type="image/png" sizes="512x512" href="common/images/icons/website_icon.png">
+  <!-- ----- -->
+  <title>Home | Olivier</title>
+</head>
+
+<body>
 
 
-    <button id="theme-toggle" onclick="toggleTheme()"><i class="fa-solid
+  <button id="theme-toggle" onclick="toggleTheme()"><i class="fa-solid
         fa-circle-half-stroke"></i></button>
-    <script src="common/scripts/main_theme_toggler.js"></script>
+  <script src="common/scripts/main_theme_toggler.js"></script>
 
 
-    <p id="scroll_up_button"><a id="scroll_up" href="#"><i
-          class="fa-solid
+  <p id="scroll_up_button"><a id="scroll_up" href="#"><i class="fa-solid
           fa-circle-arrow-up"></i></a></p>
 
-    <nav id='menu'>
-      <ul>
-        <li><a href='index.html'><i class="fa-solid fa-house"></i></a></li>
-        <li><a href='pages/skills.html'>Skills</a></li>
-        <li><a href='pages/workspace.html'>WorkSpace</a></li>
-        <li><a href='pages/projects.html'>Projects</a></li>
-      </ul>
-    </nav>
-    <section id="Start">
-      <img src="common/images/main_page.png" id="main_image">
-    </section>
-    <section id="Presentation">
-      <h1>std::cout << "<span><i class="fa-solid fa-circle-info"></i> About</span>"
+  <nav id='menu'>
+    <ul>
+      <li><a href='index.html'><i class="fa-solid fa-house"></i></a></li>
+      <li><a href='pages/skills.html'>Skills</a></li>
+      <li><a href='pages/workspace.html'>WorkSpace</a></li>
+      <li><a href='pages/projects.html'>Projects</a></li>
+    </ul>
+  </nav>
+  <section id="Start">
+    <img src="common/images/main_page.png" id="main_image">
+  </section>
+  <section id="Presentation">
+    <h1>std::cout << "<span><i class=" fa-solid fa-circle-info"></i> About</span>"
         << endl ;</h1>
-      <p>Hi, I am Gabelloide, a French student in Computer Science currently
-        working at the <a
-          href='https://www.iut-orsay.universite-paris-saclay.fr/'>University of
-          Paris-Saclay</a> : I develop my personal skills, such as this
-        portfolio,
-        during my spare time. Scroll down and click on what you are curious
-        about to learn more
-        about it!
-      </p>
-      <p id="para_scroll"><a id="scroll_down" href="#Interests"><i
-            class="fa-solid
+          <p>Hi, I am Olivier, a French student in Computer Science currently
+            working at the <a href='https://www.iut-orsay.universite-paris-saclay.fr/'>University of
+              Paris-Saclay</a> : I develop my personal skills, such as this
+            portfolio,
+            during my spare time. Scroll down and click on what you are curious
+            about to learn more
+            about it!
+          </p>
+          <p id="para_scroll"><a id="scroll_down" href="#Interests"><i class="fa-solid
             fa-circle-arrow-down"></i></a></p>
+  </section>
+
+  <details id="Interests">
+    <summary>
+      <h1>print("<span><i class="fa-solid fa-cubes"></i> Interests</span>")</h1>
+    </summary>
+    <section>
+      <p>I am very interested in Hardware : computer parts, keyboards, mouses
+        and phones. I like to try things in Python and sometimes C++, which I
+        combine with some creations in Photoshop.
+        I am following the evolution of technology to reinforce my knowledge
+        about this environment. Also, I practice BasketBall during my spare
+        time. </p>
     </section>
+  </details>
 
-    <details id="Interests">
-      <summary><h1>print("<span><i class="fa-solid fa-cubes"></i> Interests</span>")</h1></summary>
-      <section>
-        <p>I am very interested in Hardware : computer parts, keyboards, mouses
-          and phones. I like to try things in Python and sometimes C++, which I
-          combine with some creations in Photoshop.
-          I am following the evolution of technology to reinforce my knowledge
-          about this environment. Also, I practice BasketBall during my spare
-          time. </p>
-      </section>
-    </details>
+  <details>
+    <summary>
+      <h1>console.log("<span><i class="fa-solid fa-book"></i> Skills</span>")</h1>
+    </summary>
+    <section>
+      <p>
+        <a href="/pages/skills.html">You should take a look here to see the complete list of my Skills.</a>
+        <br><br>This section will only index the tools and languages I am familiar
+        with: I
+        am learning things every day that I will not display here.
+      </p>
+      <ul>
+        <li><i class="fa-brands fa-python"></i> Python</li>
+        <li><i class="fa-brands fa-html5"></i> HTML | CSS</li>
+        <li><i class="fa-regular fa-copyright"></i> C++</li>
+        <li><i class="fa-brands fa-java"></i> Java</li>
+        <li><i class="fa-solid fa-camera"></i> Photoshop</li>
+        <li><i class="fa-solid fa-video"></i> Cinema4D</li>
+        <li><i class="fa-solid fa-clapperboard"></i> DaVinci Resolve</li>
+      </ul>
+      <p>We do not forget: SQL, PHP, JavaScript, Bash, and more...</p>
+    </section>
+  </details>
 
-    <details>
-      <summary> <h1>console.log("<span><i class="fa-solid fa-book"></i> Skills</span>")</h1>
-      </summary>
-      <section>
-        <p>
-          <a href="/pages/skills.html">You should take a look here to see the complete list of my Skills.</a>
-          <br><br>This section will only index the tools and languages I am familiar
-          with: I
-          am learning things every day that I will not display here.</p>
-        <ul>
-          <li><i class="fa-brands fa-python"></i> Python</li>
-          <li><i class="fa-brands fa-html5"></i> HTML | CSS</li>
-          <li><i class="fa-regular fa-copyright"></i> C++</li>
-          <li><i class="fa-brands fa-java"></i> Java</li>
-          <li><i class="fa-solid fa-camera"></i> Photoshop</li>
-          <li><i class="fa-solid fa-video"></i> Cinema4D</li>
-          <li><i class="fa-solid fa-clapperboard"></i> DaVinci Resolve</li>
-        </ul>
-        <p>We do not forget: SQL, PHP, JavaScript, Bash, and more...</p>
-      </section>
-    </details>
+  <details>
+    <summary>
+      <h1>echo "<span><i class="fa-solid fa-laptop-code"></i>
+          WorkSpace</span>"
+        >portfolio.html</h1>
+    </summary>
+    <section>
+      <p>I mainly use Visual Studio Code for my projects, alongside other
+        softwares. Also, I have one computer at home and one laptop that I
+        bring
+        to University.
+        You can learn more about <a href="pages/workspace.html">my complete
+          setup on
+          this dedicated page!</a>
+      </p>
+    </section>
+  </details>
+  <details>
+    <summary>
+      <h1>printf("<span><i class="fa-solid fa-address-book"></i>
+          Contact</span>");</h1>
+    </summary>
+    <section>
+      <p>Platforms where I am:</p>
+      <ul>
+        <li><i class="fa-brands fa-discord"></i> Minoïde#5421 </li>
+        <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Gabelloide">Gabelloide</a></li>
+      </ul>
+    </section>
+  </details>
+</body>
 
-    <details>
-      <summary> <h1>echo "<span><i class="fa-solid fa-laptop-code"></i>
-            WorkSpace</span>"
-          >portfolio.html</h1></summary>
-      <section>
-        <p>I mainly use Visual Studio Code for my projects, alongside other
-          softwares. Also, I have one computer at home and one laptop that I
-          bring
-          to University.
-          You can learn more about <a href="pages/workspace.html">my complete
-            setup on
-            this dedicated page!</a>
-        </p>
-      </section>
-    </details>
-    <details>
-      <summary><h1>printf("<span><i class="fa-solid fa-address-book"></i>
-            Contact</span>");</h1></summary>
-      <section>
-        <p>Platforms where I am:</p>
-        <ul>
-          <li><i class="fa-brands fa-discord"></i> Minoïde 🥟#5421 </li>
-          <li><i class="fa-brands fa-github"></i> <a
-              href="https://github.com/Gabelloide">Gabelloide</a></li>
-        </ul>
-      </section>
-    </details>
-  </body>
 </html>

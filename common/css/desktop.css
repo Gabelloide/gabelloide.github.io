@@ -76,7 +76,7 @@ details summary {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
   grid-auto-rows: auto;
-  row-gap: 100px; 
+  row-gap: 100px;
   padding: 1%;
 }
 
@@ -93,13 +93,13 @@ details summary {
   font-size: 30px;
 }
 
-/*  SKILLS'S GRID */ 
+/*  SKILLS'S GRID */
 #skills_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
   grid-auto-rows: auto;
-  row-gap: 100px; 
+  row-gap: 100px;
   padding: 1%;
 }
 
@@ -111,6 +111,7 @@ details summary {
   padding-top: 5%;
   font-size: 24px;
 }
+
 #skills_grid div h1 {
   font-size: 30px;
 }
@@ -124,7 +125,6 @@ details summary {
 /* NAVBAR */
 #menu {
   font-family: 'Cascadia';
-  background: #1f2937;
   color: #FFF;
   height: 40px;
   position: relative;

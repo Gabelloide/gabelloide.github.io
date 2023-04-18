@@ -99,7 +99,8 @@ details:hover {
   color: #000000;
 }
 
-#skills_grid .software:hover, #skills_grid .skill:hover {
+#skills_grid .software:hover,
+#skills_grid .skill:hover {
   background-color: #A5D7E8;
   transition: all 0.3s ease-out;
 }
@@ -108,6 +109,7 @@ details:hover {
   text-decoration: none;
 }
 
-#skills_grid span, #skills_grid a div h1 {
+#skills_grid span,
+#skills_grid a div h1 {
   color: #000000;
 }

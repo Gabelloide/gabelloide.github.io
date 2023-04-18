@@ -83,7 +83,8 @@ details:hover {
   color: #bd6bc0;
 }
 
-#skills_grid .software:hover, #skills_grid .skill:hover {
+#skills_grid .software:hover,
+#skills_grid .skill:hover {
   background-color: #12182090;
   transition: all 0.3s ease-out;
 }
