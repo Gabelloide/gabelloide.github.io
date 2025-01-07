@@ -27,14 +27,9 @@
   <p id="scroll_up_button"><a id="scroll_up" href="#"><i class="fa-solid
           fa-circle-arrow-up"></i></a></p>
 
-  <nav id='menu'>
-    <ul>
-      <li><a href='../index.html'><i class="fa-solid fa-house"></i></a></li>
-      <li><a href='skills.html'>Skills</a></li>
-      <li><a href='workspace.html'>WorkSpace</a></li>
-      <li><a href='projects.html'>Projects</a></li>
-    </ul>
-  </nav>
+  <div id="navbar-container"></div>
+  <script src="../common/scripts/fetch_navbar.js"></script>
+  
   <section id="Start">
     <img src="../common/images/projects.png" id="main_image">
   </section>
@@ -45,16 +40,24 @@
 
     <div id="project_grid">
 
+
+      <a href="gaussian_splatting.html">
+        <div class="project">
+          <img src="/common/images/icons/gaussian_splatting.png">
+          <h1>Gaussian Splatting</h1>
+          <p>A mathematical technique to produce 3D models from photos. I'm working with this technology (though I did not created it).</p>
+        </div>
+      </a>
       <a href="spotinsights.html">
         <div class="project">
+          <img src="/common/images/icons/spotify.png">
           <h1>SpotInsights</h1>
           <p>A Python desktop application that allows you to analyze your Spotify listening habits.</p>
         </div>
       </a>
-
-
       <a href="bitcoin_simulator.html">
         <div class="project">
+          <img src="/common/images/icons/euro.png">
           <h1>NSI Bitcoin
             Simulator</h1>
           <p>A simple incremental game programmed in Python.</p>
@@ -62,6 +65,7 @@
       </a>
       <a href="SmartSneak/index.html" target="_blank">
         <div class="project">
+          <img src="SmartSneak/images/logo_petit.png">
           <h1>SmartSneak</h1>
           <p>A
             fake online shopping website that offers futuristic shoes.</p>
@@ -69,6 +73,7 @@
       </a>
       <a href="https://drive.google.com/file/d/1-bcq1I6N0MRJT8GZfl7U-BGV5tuuRJzK/view" target="_blank">
         <div class="project">
+          <img src="/common/images/icons/raspberry.png">
           <h1>How
             to install Apache on Linux</h1>
           <p>A concise tutorial to get
@@ -77,6 +82,7 @@
       </a>
       <a href="HouseOfHell/html/index.html" target="_blank">
         <div class="project">
+          <img src="/common/images/icons/epub.svg">
           <h1>The House of
             Hell from Steve Jackson - Rework</h1>
           <p>A Web version of the
@@ -86,6 +92,7 @@
       </a>
       <a href="https://github.com/Gabelloide/Anagram-Game" target="_blank">
         <div class="project">
+        <img src="/common/images/icons/csharp.png">
           <h1>Anagram
             Game - C#</h1>
           <p>A very simple Anagram Game, programmed in C#
@@ -94,6 +101,7 @@
       </a>
       <a href="https://github.com/Gabelloide/Projet_Transversal_Semestre_2" target="_blankhttps://github.com/Gabelloide/Projet_Transversal_Semestre_2" target="_blank">
         <div class="project">
+        <img src="/common/images/icons/trello.png">
           <h1>Trello Lite Plus</h1>
 					<p>A lite copy of the Trello software coded in Java. Main project for the first year of the Bachelor in Computer Science.</p>
         </div>
@@ -113,9 +121,15 @@
           <h1>...</h1>
         </div>
       </a>
-
+      <a href="">
+        <div class="project">
+          <h1>...</h1>
+        </div>
+      </a>
     </div>
-
-
-
   </section>
+
+  <script src="../common/scripts/div_tiling_listener.js"></script>
+
+</body>
+</html>

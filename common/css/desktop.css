@@ -9,6 +9,7 @@ html {
 }
 
 #scroll_up_button {
+  z-index: 1;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -93,6 +94,12 @@ details summary {
   font-size: 30px;
 }
 
+#project_grid img {
+  display: inline-block;
+  margin: 5px;
+  width: 100px;
+}
+
 /*  SKILLS'S GRID */
 #skills_grid {
   display: grid;
@@ -165,4 +172,22 @@ details summary {
 
 #menu li a {
   transition: all 0.5s ease-out;
+}
+
+/* GRID TILING EFFECT */
+
+#skills_grid .skill, #skills_grid .software, #project_grid .project {
+  background-color: #121820;
+  color: #43c19a;
+  perspective: 1000px;
+  transition: transform 0.05s;
+  transform-style: preserve-3d;
+  --rotateX: 0deg;
+  --rotateY: 0deg;
+  transform: perspective(500px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
+}
+
+#skills_grid .skill:hover, #skills_grid .software:hover, #project_grid .project:hover {
+  background-color: #12182090;
+  transition: all 0.05s ease-out;
 }

@@ -17,7 +17,6 @@
   <title>Skills | Olivier</title>
 </head>
 
-
 <body>
 
   <button id="theme-toggle" onclick="toggleTheme()"><i class="fa-solid
@@ -27,14 +26,9 @@
   <p id="scroll_up_button"><a id="scroll_up" href="#"><i class="fa-solid
           fa-circle-arrow-up"></i></a></p>
 
-  <nav id='menu'>
-    <ul>
-      <li><a href='../index.html'><i class="fa-solid fa-house"></i></a></li>
-      <li><a href='skills.html'>Skills</a></li>
-      <li><a href='workspace.html'>WorkSpace</a></li>
-      <li><a href='projects.html'>Projects</a></li>
-    </ul>
-  </nav>
+  <div id="navbar-container"></div>
+  <script src="../common/scripts/fetch_navbar.js"></script>
+
   <section id="Start">
     <img src="../common/images/skills.png" id="main_image">
   </section>
@@ -58,9 +52,9 @@
         <img src="/common/images/icons/c++.png"> <img src="/common/images/icons/c.png">
         <h1><span>C++ / C</span></h1>
         <p>Learnt the basics in 2022, I can still improve myself.
-					<br>
-					I have been doing some C in class in my second year (2023-2024) of "BUT Informatique".
-				</p>
+                    <br>
+                    I have been doing some C in class in my second year (2023-2024) of "BUT Informatique".
+                </p>
       </div>
 
       <div class="skill">
@@ -158,3 +152,7 @@
     </div>
 
   </section>
+
+  <script src="../common/scripts/div_tiling_listener.js"></script>
+</body>
+</html>
