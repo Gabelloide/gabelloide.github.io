@@ -51,6 +51,14 @@ details:hover {
   transition: all 0.5s ease-out;
 }
 
+#centered_paragraph {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
 
 
 /*  PROJECT'S GRID */

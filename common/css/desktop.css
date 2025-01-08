@@ -177,7 +177,6 @@ details summary {
 /* GRID TILING EFFECT */
 
 #skills_grid .skill, #skills_grid .software, #project_grid .project {
-  background-color: #121820;
   color: #43c19a;
   perspective: 1000px;
   transition: transform 0.05s;
@@ -188,6 +187,5 @@ details summary {
 }
 
 #skills_grid .skill:hover, #skills_grid .software:hover, #project_grid .project:hover {
-  background-color: #12182090;
   transition: all 0.05s ease-out;
 }
