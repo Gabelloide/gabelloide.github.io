@@ -123,6 +123,13 @@ details section {
   text-decoration: none;
 }
 
+#project_grid img {
+  display: inline-block;
+  margin: 5px;
+  width: 75px;
+}
+
+
 /*  SKILLS'S GRID */
 #skills_grid {
   display: grid;
