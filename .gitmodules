@@ -1,0 +1,3 @@
+[submodule "pages/gaussian-splatting-showcase"]
+	path = pages/gaussian-splatting-showcase
+	url = https://github.com/Gabelloide/gaussian-splatting-showcase.git
