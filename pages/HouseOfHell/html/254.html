@@ -6,21 +6,12 @@
     <link rel="stylesheet" href="../css/chapitre.css">
   </head>
   <body>
-    <header>
-      <h1>Le Manoir de l'Enfer</h1>
-      <h2>Un livre dont vous êtes le Héros</h2>
-    </header>
-    <!-- Barre de navigation -->
-    <nav id='menu'>
-      <ul>
-        <li><a href='index.html'>Accueil</a></li>
-        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
-        <li><a href='indications_jeu.html'>Indications</a></li>
-        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
-        <li><a href='sommaire.html'>Sommaire</a></li>
-        <li><a href='copyright.html'>Copyright</a></li>
-      </ul>
-    </nav>
+    <div id="common-header"></div>
+<script>
+fetch('../includes/header.html')
+  .then(response => response.text())
+  .then(data => { document.getElementById('common-header').innerHTML = data; });
+</script>
     <h3><b>254</b></h3>
     <p>
       Vos craintes sont vite confirmées, car la porte s'ouvre à la volée. Le

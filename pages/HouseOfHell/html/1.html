@@ -8,21 +8,12 @@
   <!-- Fichier son qui sera joué au passage de la souris sur l'image-->
   <audio id="bouh" src="../sons/pluie_courte.ogg" preload="auto"></audio>
   <body>
-    <header>
-      <h1>Le Manoir de l'Enfer</h1>
-      <h2>Un livre dont vous êtes le Héros</h2>
-    </header>
-    <!-- Barre de navigation -->
-    <nav id='menu'>
-      <ul>
-        <li><a href='index.html'>Accueil</a></li>
-        <li><a href='comment_survivre.html'>Comment Survivre</a></li>
-        <li><a href='indications_jeu.html'>Indications</a></li>
-        <li><a href='debut_histoire.html'>Début de l'Histoire</a></li>
-        <li><a href='sommaire.html'>Sommaire</a></li>
-        <li><a href='copyright.html'>Copyright</a></li>
-      </ul>
-    </nav>
+    <div id="common-header"></div>
+<script>
+fetch('../includes/header.html')
+  .then(response => response.text())
+  .then(data => { document.getElementById('common-header').innerHTML = data; });
+</script>
     <h3><b>1</b></h3>
     <p style="background-image: url(../img/foret.png)">
       Vous grimpez les marches quatre à quatre et, arrivé devant la porte du
