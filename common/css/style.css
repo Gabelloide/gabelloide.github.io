@@ -2,15 +2,30 @@
 @import "mobile.css"(min-width: 0px) and (max-width: 900px);
 
 @font-face {
-  font-family: 'Cascadia';
-  font-weight: 500;
-  src: url("../fonts/Cascadia.ttf") format("truetype");
+  font-family: 'Glacial Indifference';
+  src: url("../fonts/GlacialIndifference-Regular.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url("../fonts/GlacialIndifference-Bold.otf") format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url("../fonts/GlacialIndifference-Italic.otf") format('opentype');
+  font-weight: normal;
+  font-style: italic;
 }
 
 html {
   background-color: #1f2937;
   color: white;
-  font-family: Cascadia;
+  font-family: 'Glacial Indifference', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -23,40 +38,17 @@ a {
   transition: all 0.5s ease-out;
 }
 
-details>summary {
-  list-style: none;
-}
-
-details>summary::-webkit-details-marker {
-  display: none;
-}
-
-details {
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
-  border-radius: 20px;
-  transition: all 0.5s ease-out;
-}
-
-details:not([open])>summary>h1::before {
-  content: "○ "
-}
-
-details[open]>summary>h1::before {
-  content: "● "
-}
-
-details:hover {
-  background: #121820;
-  transition: all 0.5s ease-out;
-}
-
 #centered_paragraph {
   text-align: center;
 }
 
+h1 {
+  font-weight: 100;
+}
+
 h2 {
   text-align: center;
+  font-weight: 100;
   text-decoration: underline;
 }
 
@@ -112,16 +104,6 @@ h2 {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #bd6bc0;
-}
-
-#scroll_down {
-  /* The arrow is a link by itself, we are removing any decoration */
-  text-decoration: none;
-}
-
-#para_scroll {
-  /* The paragraph that contains the arrow to scroll down, needed to be centered */
-  text-align: center;
 }
 
 .fa-circle-arrow-down:hover {
