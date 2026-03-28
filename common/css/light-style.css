@@ -6,9 +6,12 @@ html {
 }
 
 #menu,
-#menu a,
 details {
   background: #FFFFFF;
+  color: #363636;
+}
+
+#menu a {
   color: #363636;
 }
 
@@ -38,7 +41,6 @@ a:hover {
   border-radius: 10px;
   color: white;
   background: #363636;
-  transition: all 0.5s ease-out;
 }
 
 details:hover {
@@ -135,7 +137,6 @@ details:hover {
 a {
   color: #00b3ff;
   text-decoration: underline;
-  transition: all 0.5s ease-out;
 }
 
 a:hover {
