@@ -22,6 +22,30 @@
   font-style: italic;
 }
 
+html, body {
+transition: background-color 280ms ease, color 280ms ease;
+}
+
+nav, section, .project, .skill, .software, #theme-toggle, a {
+transition: background-color 280ms ease, color 280ms ease, border-color 280ms ease, box-shadow 280ms ease;
+}
+
+#main_image {
+transition: opacity 220ms ease, filter 220ms ease;
+}
+
+#main_image.is-switching {
+opacity: 0.35;
+filter: blur(1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+*, *::before, *::after {
+transition: none !important;
+animation: none !important;
+}
+}
+
 html {
   background-color: #1f2937;
   color: white;
